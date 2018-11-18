@@ -1298,11 +1298,11 @@
        </item>
        <item row="3" column="0">
         <widget class="QLabel" name="wallet_custombackuppath_label">
-         <property name="text">
-          <string>Custom Backup Path:</string>
-         </property>
          <property name="visible">
           <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Custom Backup Path:</string>
          </property>
         </widget>
        </item>
@@ -1311,6 +1311,9 @@
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
+         <property name="visible">
+          <bool>false</bool>
+         </property>
          <property name="text">
           <string>N/A</string>
          </property>
@@ -1320,18 +1323,15 @@
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
          </property>
-         <property name="visible">
-          <bool>false</bool>
-         </property>
         </widget>
        </item>
        <item row="4" column="0">
         <widget class="QLabel" name="wallet_customzGFCbackuppath_label">
-         <property name="text">
-          <string>Custom zGFC Backup Path:</string>
-         </property>
          <property name="visible">
           <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Custom zGFC Backup Path:</string>
          </property>
         </widget>
        </item>
@@ -1340,6 +1340,9 @@
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
+         <property name="visible">
+          <bool>false</bool>
+         </property>
          <property name="text">
           <string>N/A</string>
          </property>
@@ -1349,18 +1352,15 @@
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
          </property>
-         <property name="visible">
-          <bool>false</bool>
-         </property>
         </widget>
        </item>
        <item row="5" column="0">
         <widget class="QLabel" name="wallet_custombackupthreshold_label">
-         <property name="text">
-          <string>Custom Backups Threshold:</string>
-         </property>
          <property name="visible">
           <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Custom Backups Threshold:</string>
          </property>
         </widget>
        </item>
@@ -1369,6 +1369,9 @@
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
+         <property name="visible">
+          <bool>false</bool>
+         </property>
          <property name="text">
           <string>N/A</string>
          </property>
@@ -1377,9 +1380,6 @@
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
-         </property>
-         <property name="visible">
-          <bool>false</bool>
          </property>
         </widget>
        </item>
