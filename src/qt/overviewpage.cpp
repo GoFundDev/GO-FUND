@@ -274,7 +274,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelImmature->setVisible(showImmature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
     ui->labelImmatureText->setVisible(showImmature || showWatchOnlyImmature);
     ui->labelWatchImmature->setVisible(showImmature && showWatchOnly); // show watch-only immature balance
-    bool showzGFCAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
+    bool showzGFCAvailable = settingShowAllBalances;
     bool showzGFCUnconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
     bool showzGFCImmature = settingShowAllBalances || immatureZerocoinBalance != 0;
 
