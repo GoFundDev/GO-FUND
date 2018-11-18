@@ -642,19 +642,19 @@ SOURCES += src/activemasternode.cpp \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
 RESOURCES += src/qt/gofund.qrc src/qt/gofund_locale.qrc
 
-TRANSLATIONS += src/qt/locale/gfc_bg.ts \
-                src/qt/locale/gfc_de.ts \
-                src/qt/locale/gfc_en.ts \
-                src/qt/locale/gfc_es.ts \
-                src/qt/locale/gfc_fi.ts \
-                src/qt/locale/gfc_fr.ts \
-                src/qt/locale/gfc_it.ts \
-                src/qt/locale/gfc_ja.ts \
-                src/qt/locale/gfc_pl.ts \
-                src/qt/locale/gfc_pt.ts \
-                src/qt/locale/gfc_ru.ts \
-                src/qt/locale/gfc_sk.ts \
-                src/qt/locale/gfc_sv.ts \
-                src/qt/locale/gfc_vi.ts \
-                src/qt/locale/gfc_zh_CN.ts \
-                src/qt/locale/gfc_zh_TW.ts
+TRANSLATIONS += src/qt/locale/gofund_bg.ts \
+                src/qt/locale/gofund_de.ts \
+                src/qt/locale/gofund_en.ts \
+                src/qt/locale/gofund_es.ts \
+                src/qt/locale/gofund_fi.ts \
+                src/qt/locale/gofund_fr.ts \
+                src/qt/locale/gofund_it.ts \
+                src/qt/locale/gofund_ja.ts \
+                src/qt/locale/gofund_pl.ts \
+                src/qt/locale/gofund_pt.ts \
+                src/qt/locale/gofund_ru.ts \
+                src/qt/locale/gofund_sk.ts \
+                src/qt/locale/gofund_sv.ts \
+                src/qt/locale/gofund_vi.ts \
+                src/qt/locale/gofund_zh_CN.ts \
+                src/qt/locale/gofund_zh_TW.ts

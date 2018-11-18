@@ -7,38 +7,38 @@ EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
 # gofund qt core #
 QT_TS = \
-  qt/locale/gfc_bg.ts \
-  qt/locale/gfc_ca.ts \
-  qt/locale/gfc_cs.ts \
-  qt/locale/gfc_da.ts \
-  qt/locale/gfc_de.ts \
-  qt/locale/gfc_en.ts \
-  qt/locale/gfc_en_US.ts \
-  qt/locale/gfc_eo.ts \
-  qt/locale/gfc_es.ts \
-  qt/locale/gfc_es_ES.ts \
-  qt/locale/gfc_fi.ts \
-  qt/locale/gfc_fr_FR.ts \
-  qt/locale/gfc_hi_IN.ts \
-  qt/locale/gfc_hr.ts \
-  qt/locale/gfc_hr_HR.ts \
-  qt/locale/gfc_it.ts \
-  qt/locale/gfc_ja.ts \
-  qt/locale/gfc_ko_KR.ts \
-  qt/locale/gfc_lt_LT.ts \
-  qt/locale/gfc_nl.ts \
-  qt/locale/gfc_pl.ts \
-  qt/locale/gfc_pt.ts \
-  qt/locale/gfc_pt_BR.ts \
-  qt/locale/gfc_ro_RO.ts \
-  qt/locale/gfc_ru.ts \
-  qt/locale/gfc_sk.ts \
-  qt/locale/gfc_sv.ts \
-  qt/locale/gfc_tr.ts \
-  qt/locale/gfc_uk.ts \
-  qt/locale/gfc_vi.ts \
-  qt/locale/gfc_zh_CN.ts \
-  qt/locale/gfc_zh_TW.ts
+  qt/locale/gofund_bg.ts \
+  qt/locale/gofund_ca.ts \
+  qt/locale/gofund_cs.ts \
+  qt/locale/gofund_da.ts \
+  qt/locale/gofund_de.ts \
+  qt/locale/gofund_en.ts \
+  qt/locale/gofund_en_US.ts \
+  qt/locale/gofund_eo.ts \
+  qt/locale/gofund_es.ts \
+  qt/locale/gofund_es_ES.ts \
+  qt/locale/gofund_fi.ts \
+  qt/locale/gofund_fr_FR.ts \
+  qt/locale/gofund_hi_IN.ts \
+  qt/locale/gofund_hr.ts \
+  qt/locale/gofund_hr_HR.ts \
+  qt/locale/gofund_it.ts \
+  qt/locale/gofund_ja.ts \
+  qt/locale/gofund_ko_KR.ts \
+  qt/locale/gofund_lt_LT.ts \
+  qt/locale/gofund_nl.ts \
+  qt/locale/gofund_pl.ts \
+  qt/locale/gofund_pt.ts \
+  qt/locale/gofund_pt_BR.ts \
+  qt/locale/gofund_ro_RO.ts \
+  qt/locale/gofund_ru.ts \
+  qt/locale/gofund_sk.ts \
+  qt/locale/gofund_sv.ts \
+  qt/locale/gofund_tr.ts \
+  qt/locale/gofund_uk.ts \
+  qt/locale/gofund_vi.ts \
+  qt/locale/gofund_zh_CN.ts \
+  qt/locale/gofund_zh_TW.ts
 
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
