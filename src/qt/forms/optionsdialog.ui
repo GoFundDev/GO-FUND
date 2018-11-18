@@ -30,10 +30,10 @@
        <item>
         <widget class="QCheckBox" name="bitcoinAtStartup">
          <property name="toolTip">
-          <string>Automatically start PIVX after logging in to the system.</string>
+          <string>Automatically start GoFund after logging in to the system.</string>
          </property>
          <property name="text">
-          <string>&amp;Start PIVX on system login</string>
+          <string>&amp;Start GoFund on system login</string>
          </property>
         </widget>
        </item>
@@ -299,7 +299,7 @@
        <item>
         <widget class="QCheckBox" name="mapPortUpnp">
          <property name="toolTip">
-          <string>Automatically open the PIVX client port on the router. This only works when your router supports UPnP and it is enabled.</string>
+          <string>Automatically open the GoFund client port on the router. This only works when your router supports UPnP and it is enabled.</string>
          </property>
          <property name="text">
           <string>Map port using &amp;UPnP</string>
@@ -319,7 +319,7 @@
        <item>
         <widget class="QCheckBox" name="connectSocks">
          <property name="toolTip">
-          <string>Connect to the PIVX network through a SOCKS5 proxy.</string>
+          <string>Connect to the GoFund network through a SOCKS5 proxy.</string>
          </property>
          <property name="text">
           <string>&amp;Connect through SOCKS5 proxy (default proxy):</string>
@@ -485,7 +485,7 @@
          <item>
           <widget class="QValueComboBox" name="lang">
            <property name="toolTip">
-            <string>The user interface language can be set here. This setting will take effect after restarting PIVX.</string>
+            <string>The user interface language can be set here. This setting will take effect after restarting GoFund.</string>
            </property>
           </widget>
          </item>
@@ -506,8 +506,7 @@
           <string notr="true"/>
          </property>
          <property name="text">
-          <string>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/pivx-project/pivx-project-translations</string>
+          <string>Language missing or translation incomplete? Help contributing. Send a email to developer@go-fund-ico.com</string>
          </property>
          <property name="wordWrap">
           <bool>true</bool>
