@@ -24,7 +24,7 @@
 #endif
 
 #if defined(HAVE_CONFIG_H)
-#include "config/gfc-config.h" /* for USE_QRCODE */
+#include "config/gofund-config.h" /* for USE_QRCODE */
 #endif
 
 #ifdef USE_QRCODE

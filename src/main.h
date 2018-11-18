@@ -10,7 +10,7 @@
 #define BITCOIN_MAIN_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/gfc-config.h"
+#include "config/gofund-config.h"
 #endif
 
 #include "amount.h"

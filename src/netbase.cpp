@@ -6,7 +6,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifdef HAVE_CONFIG_H
-#include "config/gfc-config.h"
+#include "config/gofund-config.h"
 #endif
 
 #include "netbase.h"
