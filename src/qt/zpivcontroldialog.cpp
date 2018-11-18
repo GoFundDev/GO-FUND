@@ -1,4 +1,5 @@
 // Copyright (c) 2017-2018 The PIVX developers
+// Copyright (c) 2018 The GoFund developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -16,13 +17,12 @@ std::set<std::string> ZPivControlDialog::setSelectedMints;
 std::set<CMintMeta> ZPivControlDialog::setMints;
 
 ZPivControlDialog::ZPivControlDialog(QWidget *parent) :
-    QDialog(parent, Qt::WindowSystemMenuHint | Qt::WindowTitleHint | Qt::WindowCloseButtonHint),
+    QDialog(parent),
     ui(new Ui::ZPivControlDialog),
     model(0)
 {
     ui->setupUi(this);
     setMints.clear();
-    privacyDialog = (PrivacyDialog*)parent;
 
     // click on checkbox
     connect(ui->treeWidget, SIGNAL(itemChanged(QTreeWidgetItem*, int)), this, SLOT(updateSelection(QTreeWidgetItem*, int)));
@@ -162,8 +162,6 @@ void ZPivControlDialog::updateLabels()
     ui->labelZPiv_int->setText(QString::number(nAmount));
     ui->labelQuantity_int->setText(QString::number(setSelectedMints.size()));
 
-    //update PrivacyDialog labels
-    privacyDialog->setZPivControlLabels(nAmount, setSelectedMints.size());
 }
 
 std::vector<CMintMeta> ZPivControlDialog::GetSelectedMints()
