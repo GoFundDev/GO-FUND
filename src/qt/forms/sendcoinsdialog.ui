@@ -898,7 +898,7 @@
              <x>0</x>
              <y>0</y>
              <width>944</width>
-             <height>68</height>
+             <height>69</height>
             </rect>
            </property>
            <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1">
@@ -1681,16 +1681,6 @@
               <number>3</number>
              </property>
              <item>
-              <widget class="QCheckBox" name="checkzGFC">
-               <property name="enabled">
-                <bool>false</bool>
-               </property>
-               <property name="text">
-                <string>Anonymized GFC</string>
-               </property>
-              </widget>
-             </item>
-             <item>
               <widget class="QCheckBox" name="checkSwiftTX">
                <property name="enabled">
                 <bool>true</bool>
@@ -1762,7 +1752,7 @@
  </resources>
  <connections/>
  <buttongroups>
-  <buttongroup name="groupCustomFee"/>
   <buttongroup name="groupFee"/>
+  <buttongroup name="groupCustomFee"/>
  </buttongroups>
 </ui>
