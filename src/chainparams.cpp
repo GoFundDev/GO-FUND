@@ -53,7 +53,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 //    timestamp before)
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
-                (0, uint256("0x001"));
+    boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1542745350, // * UNIX timestamp of last checkpoint block
@@ -188,12 +188,12 @@ public:
         //     printf("block.nTime = %u \n", genesis.nTime);
         //     printf("block.nNonce = %u \n", genesis.nNonce);
         //     printf("block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
+        //     printf("merkle = %s\n", genesis.hashMerkleRoot.ToString().c_str());
         // }
-        printf("merkle = %s\n", genesis.hashMerkleRoot.getHash().ToString().c_str());
 
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x00000478a13e99a66cb7c119decfef927c87029fc218291596f8eb7e4e18cb68"));
-        assert(genesis.hashMerkleRoot == uint256("0x1b2ef6e2f28be914103a277377ae7729dcd125dfeb8bf97bd5964ba72b6dc39b"));
+        assert(genesis.hashMerkleRoot == uint256("0x80263a3fa0e5038051829f024805ef01b915380cc12b00c31475a995b29a7f12"));
 
         vSeeds.push_back(CDNSSeedData("seed1.go-fund-ico.com", "seed1.go-fund-ico.com"));     // Primary DNS Seeder from Fuzzbawls
 
