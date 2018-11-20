@@ -165,33 +165,34 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1542745350;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 2402015;
+        genesis.nNonce = 4064197;
 
-        if(genesis.GetHash() != uint256("0x"))
-        {
-            printf("Searching for genesis block...\n");
-            uint256 hashTarget = CBigNum().SetCompact(genesis.nBits).getuint256();
-            while(uint256(genesis.GetHash()) > hashTarget)
-            {
-                ++genesis.nNonce;
-                if (genesis.nNonce == 0)
-                {
-                    printf("NONCE WRAPPED, incrementing time");
-                    std::cout << std::string("NONCE WRAPPED, incrementing time:\n");
-                    ++genesis.nTime;
-                }
-                if (genesis.nNonce % 10000 == 0)
-                {
-                    printf("Mainnet: nonce %08u: hash = %s \n", genesis.nNonce, genesis.GetHash().ToString().c_str());
-                }
-            }
-            printf("block.nTime = %u \n", genesis.nTime);
-            printf("block.nNonce = %u \n", genesis.nNonce);
-            printf("block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
-        }
+        // if(genesis.GetHash() != uint256("0x"))
+        // {
+        //     printf("Searching for genesis block...\n");
+        //     uint256 hashTarget = CBigNum().SetCompact(genesis.nBits).getuint256();
+        //     while(uint256(genesis.GetHash()) > hashTarget)
+        //     {
+        //         ++genesis.nNonce;
+        //         if (genesis.nNonce == 0)
+        //         {
+        //             printf("NONCE WRAPPED, incrementing time");
+        //             std::cout << std::string("NONCE WRAPPED, incrementing time:\n");
+        //             ++genesis.nTime;
+        //         }
+        //         if (genesis.nNonce % 10000 == 0)
+        //         {
+        //             printf("Mainnet: nonce %08u: hash = %s \n", genesis.nNonce, genesis.GetHash().ToString().c_str());
+        //         }
+        //     }
+        //     printf("block.nTime = %u \n", genesis.nTime);
+        //     printf("block.nNonce = %u \n", genesis.nNonce);
+        //     printf("block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
+        // }
+        printf("merkle = %s\n", genesis.hashMerkleRoot.getHash().ToString().c_str());
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818"));
+        assert(hashGenesisBlock == uint256("0x00000478a13e99a66cb7c119decfef927c87029fc218291596f8eb7e4e18cb68"));
         assert(genesis.hashMerkleRoot == uint256("0x1b2ef6e2f28be914103a277377ae7729dcd125dfeb8bf97bd5964ba72b6dc39b"));
 
         vSeeds.push_back(CDNSSeedData("seed1.go-fund-ico.com", "seed1.go-fund-ico.com"));     // Primary DNS Seeder from Fuzzbawls
