@@ -455,16 +455,12 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
             pCheckpointCache.second.second = pindexPrev->nAccumulatorCheckpoint;
             if (pindexPrev->nHeight + 1 >= Params().Zerocoin_Block_V2_Start()) {
                 AccumulatorMap mapAccumulators(Params().Zerocoin_Params(false));
-                if (fZerocoinActive && !CalculateAccumulatorCheckpoint(nHeight, nCheckpoint, mapAccumulators)) {
-                    LogPrintf("%s: failed to get accumulator checkpoint\n", __func__);
-                } else {
-                    // the next time the accumulator checkpoint should be recalculated ( the next height that is multiple of 10)
-                    pCheckpointCache.first = nHeight + (10 - (nHeight % 10));
+                // the next time the accumulator checkpoint should be recalculated ( the next height that is multiple of 10)
+                pCheckpointCache.first = nHeight + (10 - (nHeight % 10));
 
-                    // the block hash of the last block used in the accumulator checkpoint calc. This will handle reorg situations.
-                    pCheckpointCache.second.first = hashBlockLastAccumulated;
-                    pCheckpointCache.second.second = nCheckpoint;
-                }
+                // the block hash of the last block used in the accumulator checkpoint calc. This will handle reorg situations.
+                pCheckpointCache.second.first = hashBlockLastAccumulated;
+                pCheckpointCache.second.second = nCheckpoint;
             }
         }
 
