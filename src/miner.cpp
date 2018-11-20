@@ -115,7 +115,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         pblock->nVersion = GetArg("-blockversion", pblock->nVersion);
 
     // Make sure to create the correct block version 
-    pblock->nVersion = 3;
+    pblock->nVersion = 1;
 
     // Create coinbase tx
     CMutableTransaction txNew;
