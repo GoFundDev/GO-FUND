@@ -289,8 +289,11 @@ public:
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1454124731;
         genesis.nNonce = 2402015;
-
-        hashGenesisBlock = genesis.GetHash();
+        
+        printf("test genesis = %s\n", genesis.GetHash().ToString().c_str());
+        printf("test merkle = %s\n", genesis.hashMerkleRoot.ToString().c_str());
+        
+        /*hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818"));
 
         vFixedSeeds.clear();
@@ -326,6 +329,7 @@ public:
         nStartMasternodePayments = 1420837558; //Fri, 09 Jan 2015 21:05:58 GMT
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
                                        // here because we only have a 8 block finalization window on testnet
+                                       */
     }
     const Checkpoints::CCheckpointData& Checkpoints() const
     {
@@ -363,7 +367,9 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 51476;
-        assert(hashGenesisBlock == uint256("0x4f023a2120d9127b21bbad01724fdb79b519f593f2a85b60d3d79160ec5f29df"));
+        printf("reg genesis = %s\n", genesis.GetHash().ToString().c_str());
+
+        // assert(hashGenesisBlock == uint256("0x4f023a2120d9127b21bbad01724fdb79b519f593f2a85b60d3d79160ec5f29df"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
