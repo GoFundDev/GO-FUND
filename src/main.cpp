@@ -4004,8 +4004,8 @@ bool CheckBlockHeader(const CBlockHeader& block, CValidationState& state, bool f
         return state.DoS(50, error("CheckBlockHeader() : proof of work failed"),
             REJECT_INVALID, "high-hash");
 
-    if (block.nVersion != 3)
-        return state.DoS(50, error("CheckBlockHeader() : block version must be 3"),
+    if (block.nVersion != 1)
+        return state.DoS(50, error("CheckBlockHeader() : block version must be 1"),
         REJECT_INVALID, "block-version");
 
     return true;
