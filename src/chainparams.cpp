@@ -112,7 +112,7 @@ public:
         pchMessageStart[1] = 0x46;
         pchMessageStart[2] = 0x4e;
         pchMessageStart[3] = 0x64;
-        vAlertPubKey = ParseHex("04af37af78953a8f97e1554202aa7c2d295b6384bab6dd0664ff76b7ba51d196260148a9dd1b111e839c4efb627e7ffaf5b9717e81c334b85dbfc101e974a632dc");
+        vAlertPubKey = ParseHex("04651fa1ed0eb025771e6f71c9a748ad4a99dcd083ed7d2c15212fd3e565e88a21b093dbbe1675fcdea2065519326f2357d6a67727969d33096a34af08c4c86f82");
         nDefaultPort = 51472;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // GoFund starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
@@ -122,23 +122,23 @@ public:
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // GoFund: 1 day
-        nTargetSpacing = 1 * 60;  // GoFund: 1 minute
+        nTargetSpacing = 2 * 60;  // GoFund: 2 minutes
         nMaturity = 100;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 21000000 * COIN;
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 259200;
-        nModifierUpdateBlock = 615800;
-        nZerocoinStartHeight = 863787;
-        nZerocoinStartTime = 0; // October 17, 2017 4:30:00 AM
+        nModifierUpdateBlock = 0;
+        nZerocoinStartHeight = 2147483647;
+        nZerocoinStartTime = 0;
         nBlockEnforceSerialRange = 895400; //Enforce serial range starting this block
-        nBlockRecalculateAccumulators = 908000; //Trigger a recalculation of accumulators
-        nBlockFirstFraudulent = 891737; //First block that bad serials emerged
-        nBlockLastGoodCheckpoint = 891730; //Last valid accumulator checkpoint
-        nBlockEnforceInvalidUTXO = 902850; //Start enforcing the invalid UTXO's
-        nInvalidAmountFiltered = 268200*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
-        nBlockZerocoinV2 = 1153160; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
+        nBlockRecalculateAccumulators = 2147483647; //Trigger a recalculation of accumulators
+        nBlockFirstFraudulent = 2147483647; //First block that bad serials emerged
+        nBlockLastGoodCheckpoint = 0; //Last valid accumulator checkpoint
+        nBlockEnforceInvalidUTXO = 1; //Start enforcing the invalid UTXO's
+        nInvalidAmountFiltered = 0*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
+        nBlockZerocoinV2 = 2147483647; //!> The block that zerocoin v2 becomes active
 
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
@@ -216,7 +216,7 @@ public:
 
         nPoolMaxTransactions = 3;
         strSporkKey = "04a0444e8eee9c0196f506d32fa7dcdd7b492c72d0fd85fde761314b905d0e58af5cf1882a92d5dfd5ae7a8c38c5df548fa06abd6b6a50747db7845c1fdfc70b84";
-        strObfuscationPoolDummyAddress = "D87q2gC9j6nNrnzCsg4aY6bHMLsT9nUhEw";
+        strObfuscationPoolDummyAddress = "Geq6983EKZaxYfzg1xCAis2LCDtVaKTcs4";
         nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT
 
         /** Zerocoin */
