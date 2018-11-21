@@ -121,14 +121,14 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // GoFund: 1 day
+        nTargetTimespan = 40 * 60; // GoFund: 40 minutes
         nTargetSpacing = 2 * 60;  // GoFund: 2 minutes
         nMaturity = 100;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 21000000 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 259200;
+        nLastPOWBlock = 250;
         nModifierUpdateBlock = 0;
         nZerocoinStartHeight = 2147483647;
         nZerocoinStartTime = 0;
@@ -193,7 +193,7 @@ public:
         nPoolMaxTransactions = 3;
         strSporkKey = "04a0444e8eee9c0196f506d32fa7dcdd7b492c72d0fd85fde761314b905d0e58af5cf1882a92d5dfd5ae7a8c38c5df548fa06abd6b6a50747db7845c1fdfc70b84";
         strObfuscationPoolDummyAddress = "Geq6983EKZaxYfzg1xCAis2LCDtVaKTcs4";
-        nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT
+        nStartMasternodePayments = 1542745350;
 
         /** Zerocoin */
         zerocoinModulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
