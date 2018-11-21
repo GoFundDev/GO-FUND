@@ -314,11 +314,11 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
     CAmount masternodePayment = GetMasternodePayment(pindexPrev->nHeight, blockValue, 0, fZPIVStake);
 // test
 CAmount aV = GetBlockValue(1250001);
-LogPrintf("dbg 1250001 = %d\n", av);
+LogPrintf("dbg 1250001 = %d\n", aV);
 aV = GetBlockValue(3000000);
-LogPrintf("dbg 3000000 = %d\n", av);
+LogPrintf("dbg 3000000 = %d\n", aV);
 aV = GetBlockValue(3000001);
-LogPrintf("dbg 3000001 = %d\n", av);
+LogPrintf("dbg 3000001 = %d\n", aV);
 
     if (hasPayment) {
         if (fProofOfStake) {
