@@ -81,8 +81,7 @@ static bool SelectBlockFromCandidates(
     int64_t nSelectionIntervalStop,
     uint64_t nStakeModifierPrev,
     const CBlockIndex** pindexSelected)
-{
-    bool fModifierV2 = false;
+
     bool fFirstRun = true;
     bool fSelected = false;
     uint256 hashBest = 0;
