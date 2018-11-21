@@ -1839,7 +1839,7 @@ int64_t GetBlockValue(int nHeight)
     } else if (nHeight < 1250000 && nHeight >= 1000000) {
         nSubsidy = 22 * COIN;
     } else {
-        int reductions = (nHeight / Params().SubsidyHalvingInterval()) - 4;
+        int reductions = (nHeight / Params().SubsidyHalvingInterval()) - 5;
         nSubsidy = 22 * COIN;
 
         // Subsidy is cut by 20% ever 250,000 blocks which will occur approximately every 347 days
