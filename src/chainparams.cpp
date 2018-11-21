@@ -115,7 +115,7 @@ public:
         vAlertPubKey = ParseHex("04651fa1ed0eb025771e6f71c9a748ad4a99dcd083ed7d2c15212fd3e565e88a21b093dbbe1675fcdea2065519326f2357d6a67727969d33096a34af08c4c86f82");
         nDefaultPort = 40881;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // GoFund starting difficulty is 1 / 2^12
-        nSubsidyHalvingInterval = 210000;
+        nSubsidyHalvingInterval = 250000;
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
