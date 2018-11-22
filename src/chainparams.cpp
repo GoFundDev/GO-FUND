@@ -123,7 +123,7 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 40 * 60; // GoFund: 40 minutes
         nTargetSpacing = 2 * 60;  // GoFund: 2 minutes
-        nMaturity = 100;
+        nMaturity = 10;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 21000000 * COIN;
 
