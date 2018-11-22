@@ -132,7 +132,7 @@ public:
         nModifierUpdateBlock = 0;
         nZerocoinStartHeight = 2147483647;
         nZerocoinStartTime = 0;
-        nBlockEnforceSerialRange = 895400; //Enforce serial range starting this block
+        nBlockEnforceSerialRange = 2147483647; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = 2147483647; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = 2147483647; //First block that bad serials emerged
         nBlockLastGoodCheckpoint = 0; //Last valid accumulator checkpoint
@@ -190,7 +190,7 @@ public:
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
 
-        nPoolMaxTransactions = 3;
+        nPoolMaxTransactions = 0;
         strSporkKey = "04a0444e8eee9c0196f506d32fa7dcdd7b492c72d0fd85fde761314b905d0e58af5cf1882a92d5dfd5ae7a8c38c5df548fa06abd6b6a50747db7845c1fdfc70b84";
         strObfuscationPoolDummyAddress = "Geq6983EKZaxYfzg1xCAis2LCDtVaKTcs4";
         nStartMasternodePayments = 1542745350;
@@ -202,7 +202,7 @@ public:
             "7259085141865462043576798423387184774447920739934236584823824281198163815010674810451660377306056201619676256133"
             "8441436038339044149526344321901146575444541784240209246165157233507787077498171257724679629263863563732899121548"
             "31438167899885040445364023527381951378636564391212010397122822120720357";
-        nMaxZerocoinSpendsPerTransaction = 7; // Assume about 20kb each
+        nMaxZerocoinSpendsPerTransaction = 0; // Assume about 20kb each
         nMinZerocoinMintFee = 1 * CENT; //high fee required for zerocoin mints
         nMintRequiredConfirmations = 20; //the maximum amount of confirmations until accumulated in 19
         nRequiredAccumulation = 1;
