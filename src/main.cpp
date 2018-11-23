@@ -1063,6 +1063,7 @@ bool CheckZerocoinSpend(const CTransaction& tx, bool fVerifySignature, CValidati
 
 bool CheckTransaction(const CTransaction& tx, bool fZerocoinActive, bool fRejectBadUTXO, CValidationState& state)
 {
+    fZerocoinActive = false;
     // Basic checks that don't depend on any context
     if (tx.vin.empty())
         return state.DoS(10, error("CheckTransaction() : vin empty"),
@@ -1217,11 +1218,11 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
     if (pfMissingInputs)
         *pfMissingInputs = false;
 
-    //Temporarily disable zerocoin for maintenance
-    if (GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE) && tx.ContainsZerocoins())
-        return state.DoS(10, error("AcceptToMemoryPool : Zerocoin transactions are temporarily disabled for maintenance"), REJECT_INVALID, "bad-tx");
+    // disable zerocoin
+    if (tx.ContainsZerocoins())
+        return state.DoS(10, error("AcceptToMemoryPool : Zerocoin transactions are disabled"), REJECT_INVALID, "bad-tx");
 
-    if (!CheckTransaction(tx, chainActive.Height() >= Params().Zerocoin_StartHeight(), true, state))
+    if (!CheckTransaction(tx, false, true, state))
         return state.DoS(100, error("AcceptToMemoryPool: : CheckTransaction failed"), REJECT_INVALID, "bad-tx");
 
     // Coinbase is only valid in a block, not as a loose transaction
@@ -1278,23 +1279,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
 
         CAmount nValueIn = 0;
         if(tx.IsZerocoinSpend()){
-            nValueIn = tx.GetZerocoinSpent();
-
-            //Check that txid is not already in the chain
-            int nHeightTx = 0;
-            if (IsTransactionInChain(tx.GetHash(), nHeightTx))
-                return state.Invalid(error("AcceptToMemoryPool : zPIV spend tx %s already in block %d",
-                                           tx.GetHash().GetHex(), nHeightTx), REJECT_DUPLICATE, "bad-txns-inputs-spent");
-
-            //Check for double spending of serial #'s
-            for (const CTxIn& txIn : tx.vin) {
-                if (!txIn.scriptSig.IsZerocoinSpend())
-                    continue;
-                CoinSpend spend = TxInToZerocoinSpend(txIn);
-                if (!ContextualCheckZerocoinSpend(tx, spend, chainActive.Tip(), 0))
-                    return state.Invalid(error("%s: ContextualCheckZerocoinSpend failed for tx %s", __func__,
-                                               tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zpiv");
-            }
+            return state.Invalid(error("AcceptToMemoryPool : zerocoin is disabled."));
         } else {
             LOCK(pool.cs);
             CCoinsViewMemPool viewMemPool(pcoinsTip, pool);
@@ -2706,8 +2691,8 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
             return state.DoS(100, error("ConnectBlock() : too many sigops"), REJECT_INVALID, "bad-blk-sigops");
 
         //Temporarily disable zerocoin transactions for maintenance
-        if (block.nTime > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE) && !IsInitialBlockDownload() && tx.ContainsZerocoins()) {
-            return state.DoS(100, error("ConnectBlock() : zerocoin transactions are currently in maintenance mode"));
+        if (tx.ContainsZerocoins()) {
+            return state.DoS(100, error("ConnectBlock() : zerocoin transactions are disabled"));
         }
 
         if (tx.IsZerocoinSpend()) {

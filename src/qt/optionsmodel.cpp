@@ -79,8 +79,8 @@ void OptionsModel::Init()
     fCoinControlFeatures = settings.value("fCoinControlFeatures", false).toBool();
 
     if (!settings.contains("fZeromintEnable"))
-        settings.setValue("fZeromintEnable", true);
-    fEnableZeromint = settings.value("fZeromintEnable").toBool();
+        settings.setValue("fZeromintEnable", false);
+    fEnableZeromint = false;
 
     if (!settings.contains("nZeromintPercentage"))
         settings.setValue("nZeromintPercentage", 10);
@@ -162,7 +162,7 @@ void OptionsModel::Init()
         addOverriddenOption("-lang");
 
     if (settings.contains("fZeromintEnable"))
-        SoftSetBoolArg("-enablezeromint", settings.value("fZeromintEnable").toBool());
+        SoftSetBoolArg("-enablezeromint", false);
     if (settings.contains("nZeromintPercentage"))
         SoftSetArg("-zeromintpercentage", settings.value("nZeromintPercentage").toString().toStdString());
     if (settings.contains("nPreferredDenom"))
@@ -369,9 +369,8 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             }
             break;
         case ZeromintEnable:
-            fEnableZeromint = value.toBool();
-            settings.setValue("fZeromintEnable", fEnableZeromint);
-            emit zeromintEnableChanged(fEnableZeromint);
+            settings.setValue("fZeromintEnable", false);
+            emit zeromintEnableChanged(false);
             break;
         case ZeromintPercentage:
             nZeromintPercentage = value.toInt();

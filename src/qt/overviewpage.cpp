@@ -237,18 +237,6 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelWatchLocked->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nWatchOnlyLockedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelWatchTotal->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nTotalWatchBalance, false, BitcoinUnits::separatorAlways));
 
-    // Adjust bubble-help according to AutoMint settings
-    QString automintHelp = tr("Current percentage of zGFC.\nIf AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).\n");
-    bool fEnableZeromint = GetBoolArg("-enablezeromint", true);
-    int nZeromintPercentage = GetArg("-zeromintpercentage", 10);
-    if (fEnableZeromint) {
-        automintHelp += tr("AutoMint is currently enabled and set to ") + QString::number(nZeromintPercentage) + "%.\n";
-        automintHelp += tr("To disable AutoMint add 'enablezeromint=0' in gofund.conf.");
-    }
-    else {
-        automintHelp += tr("AutoMint is currently disabled.\nTo enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in gofund.conf");
-    }
-
     // Only show most balances if they are non-zero for the sake of simplicity
     QSettings settings;
     bool settingShowAllBalances = !settings.value("fHideZeroBalances").toBool();
