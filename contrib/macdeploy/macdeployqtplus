@@ -603,7 +603,7 @@ else:
 
 # ------------------------------------------------
 
-target = os.path.join("dist", "PIVX-Qt.app")
+target = os.path.join("dist", "GoFund-Qt.app")
 
 if verbose >= 2:
     print("+ Copying source bundle +")
