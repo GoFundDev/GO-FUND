@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: pivxd.service
-Upstart: pivxd.conf
-OpenRC:  pivxd.openrc
-         pivxd.openrcconf
-CentOS:  pivxd.init
+SystemD: gofundd.service
+Upstart: gofundd.conf
+OpenRC:  gofundd.openrc
+         gofundd.openrcconf
+CentOS:  gofundd.init
 
 have been made available to assist packagers in creating node packages here.
 

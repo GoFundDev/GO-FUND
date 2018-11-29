@@ -1,19 +1,19 @@
 [Unit]
-Description=PIVX's distributed currency daemon
+Description=GoFund's distributed currency daemon
 After=network.target
 
 [Service]
-User=pivx
-Group=pivx
+User=gofund
+Group=gofund
 
 Type=forking
-PIDFile=/var/lib/pivxd/pivxd.pid
+PIDFile=/var/lib/gofundd/gofundd.pid
 
-ExecStart=/usr/bin/pivxd -daemon -pid=/var/lib/pivxd/pivxd.pid \
-          -conf=/etc/pivx/pivx.conf -datadir=/var/lib/pivxd
+ExecStart=/usr/bin/gofundd -daemon -pid=/var/lib/gofundd/gofundd.pid \
+          -conf=/etc/gofund/gofund.conf -datadir=/var/lib/gofundd
 
-ExecStop=-/usr/bin/pivx-cli -conf=/etc/pivx/pivx.conf \
-         -datadir=/var/lib/pivxd stop
+ExecStop=-/usr/bin/gofund-cli -conf=/etc/gofund/gofund.conf \
+         -datadir=/var/lib/gofundd stop
 
 Restart=always
 PrivateTmp=true

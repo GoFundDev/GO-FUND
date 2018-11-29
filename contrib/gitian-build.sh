@@ -31,7 +31,7 @@ commitFiles=true
 read -d '' usage <<- EOF
 Usage: $scriptName [-c|u|v|b|s|B|o|h|j|m|] signer version
 
-Run this script from the directory containing the pivx, gitian-builder, gitian.sigs, and pivx-detached-sigs.
+Run this script from the directory containing the gofund, gitian-builder, gitian.sigs, and gofund-detached-sigs.
 
 Arguments:
 signer          GPG signer to sign each build assert file
@@ -237,7 +237,7 @@ echo ${COMMIT}
 if [[ $setup = true ]]
 then
     sudo apt-get install ruby apache2 git apt-cacher-ng python-vm-builder qemu-kvm qemu-utils
-    git clone https://github.com/pivx-project/gitian.sigs.git
+    git clone https://github.com/gofund-project/gitian.sigs.git
     git clone https://github.com/GoFundDev/GoFund-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     pushd ./gitian-builder
@@ -252,7 +252,7 @@ then
 fi
 
 # Set up build
-pushd ./pivx
+pushd ./gofund
 git fetch
 git checkout ${COMMIT}
 popd
@@ -261,7 +261,7 @@ popd
 if [[ $build = true ]]
 then
 	# Make output folder
-	mkdir -p ./pivx-binaries/${VERSION}
+	mkdir -p ./gofund-binaries/${VERSION}
 
 	# Build Dependencies
 	echo ""
@@ -271,7 +271,7 @@ then
 	mkdir -p inputs
 	wget -N -P inputs $osslPatchUrl
 	wget -N -P inputs $osslTarUrl
-	make -C ../pivx/depends download SOURCES_PATH=`pwd`/cache/common
+	make -C ../gofund/depends download SOURCES_PATH=`pwd`/cache/common
 
 	# Linux
 	if [[ $linux = true ]]
@@ -279,9 +279,9 @@ then
             echo ""
 	    echo "Compiling ${VERSION} Linux"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit pivx=${COMMIT} --url pivx=${url} ../pivx/contrib/gitian-descriptors/gitian-linux.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../pivx/contrib/gitian-descriptors/gitian-linux.yml
-	    mv build/out/pivx-*.tar.gz build/out/src/pivx-*.tar.gz ../pivx-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit gofund=${COMMIT} --url gofund=${url} ../gofund/contrib/gitian-descriptors/gitian-linux.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../gofund/contrib/gitian-descriptors/gitian-linux.yml
+	    mv build/out/gofund-*.tar.gz build/out/src/gofund-*.tar.gz ../gofund-binaries/${VERSION}
 	fi
 	# Windows
 	if [[ $windows = true ]]
@@ -289,10 +289,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit pivx=${COMMIT} --url pivx=${url} ../pivx/contrib/gitian-descriptors/gitian-win.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../pivx/contrib/gitian-descriptors/gitian-win.yml
-	    mv build/out/pivx-*-win-unsigned.tar.gz inputs/pivx-win-unsigned.tar.gz
-	    mv build/out/pivx-*.zip build/out/pivx-*.exe ../pivx-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit gofund=${COMMIT} --url gofund=${url} ../gofund/contrib/gitian-descriptors/gitian-win.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../gofund/contrib/gitian-descriptors/gitian-win.yml
+	    mv build/out/gofund-*-win-unsigned.tar.gz inputs/gofund-win-unsigned.tar.gz
+	    mv build/out/gofund-*.zip build/out/gofund-*.exe ../gofund-binaries/${VERSION}
 	fi
 	# Mac OSX
 	if [[ $osx = true ]]
@@ -300,10 +300,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit pivx=${COMMIT} --url pivx=${url} ../pivx/contrib/gitian-descriptors/gitian-osx.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../pivx/contrib/gitian-descriptors/gitian-osx.yml
-	    mv build/out/pivx-*-osx-unsigned.tar.gz inputs/pivx-osx-unsigned.tar.gz
-	    mv build/out/pivx-*.tar.gz build/out/pivx-*.dmg ../pivx-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit gofund=${COMMIT} --url gofund=${url} ../gofund/contrib/gitian-descriptors/gitian-osx.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../gofund/contrib/gitian-descriptors/gitian-osx.yml
+	    mv build/out/gofund-*-osx-unsigned.tar.gz inputs/gofund-osx-unsigned.tar.gz
+	    mv build/out/gofund-*.tar.gz build/out/gofund-*.dmg ../gofund-binaries/${VERSION}
 	fi
 	# AArch64
 	if [[ $aarch64 = true ]]
@@ -311,9 +311,9 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} AArch64"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit pivx=${COMMIT} --url pivx=${url} ../pivx/contrib/gitian-descriptors/gitian-aarch64.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-aarch64 --destination ../gitian.sigs/ ../pivx/contrib/gitian-descriptors/gitian-aarch64.yml
-	    mv build/out/pivx-*.tar.gz build/out/src/pivx-*.tar.gz ../pivx-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit gofund=${COMMIT} --url gofund=${url} ../gofund/contrib/gitian-descriptors/gitian-aarch64.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-aarch64 --destination ../gitian.sigs/ ../gofund/contrib/gitian-descriptors/gitian-aarch64.yml
+	    mv build/out/gofund-*.tar.gz build/out/src/gofund-*.tar.gz ../gofund-binaries/${VERSION}
 	popd
 
         if [[ $commitFiles = true ]]
@@ -340,32 +340,32 @@ then
 	echo ""
 	echo "Verifying v${VERSION} Linux"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../pivx/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../gofund/contrib/gitian-descriptors/gitian-linux.yml
 	# Windows
 	echo ""
 	echo "Verifying v${VERSION} Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../pivx/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../gofund/contrib/gitian-descriptors/gitian-win.yml
 	# Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../pivx/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../gofund/contrib/gitian-descriptors/gitian-osx.yml
 	# AArch64
 	echo ""
 	echo "Verifying v${VERSION} AArch64"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../pivx/contrib/gitian-descriptors/gitian-aarch64.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../gofund/contrib/gitian-descriptors/gitian-aarch64.yml
 	# Signed Windows
 	echo ""
 	echo "Verifying v${VERSION} Signed Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../pivx/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../gofund/contrib/gitian-descriptors/gitian-osx-signer.yml
 	# Signed Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Signed Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../pivx/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../gofund/contrib/gitian-descriptors/gitian-osx-signer.yml
 	popd
 fi
 
@@ -380,10 +380,10 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../pivx/contrib/gitian-descriptors/gitian-win-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../pivx/contrib/gitian-descriptors/gitian-win-signer.yml
-	    mv build/out/pivx-*win64-setup.exe ../pivx-binaries/${VERSION}
-	    mv build/out/pivx-*win32-setup.exe ../pivx-binaries/${VERSION}
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../gofund/contrib/gitian-descriptors/gitian-win-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../gofund/contrib/gitian-descriptors/gitian-win-signer.yml
+	    mv build/out/gofund-*win64-setup.exe ../gofund-binaries/${VERSION}
+	    mv build/out/gofund-*win32-setup.exe ../gofund-binaries/${VERSION}
 	fi
 	# Sign Mac OSX
 	if [[ $osx = true ]]
@@ -391,9 +391,9 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../pivx/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../pivx/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    mv build/out/pivx-osx-signed.dmg ../pivx-binaries/${VERSION}/pivx-${VERSION}-osx.dmg
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../gofund/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../gofund/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    mv build/out/gofund-osx-signed.dmg ../gofund-binaries/${VERSION}/gofund-${VERSION}-osx.dmg
 	fi
 	popd
 
