@@ -62,12 +62,12 @@
         <translation>Direcciones de recepción</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son sus direcciones de PIVX para enviar pagos. Compruebe siempre la cantidad así como la dirección de destino antes de enviar moneda.</translation>
+        <source>These are your GFC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estas son sus direcciones de GFC para enviar pagos. Compruebe siempre la cantidad así como la dirección de destino antes de enviar moneda.</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estas son sus direcciones de PIVX para recibir pagos. Es recomendable que use una dirección nueva para cada transacción.</translation>
+        <source>These are your GFC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Estas son sus direcciones de GFC para recibir pagos. Es recomendable que use una dirección nueva para cada transacción.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Confirmar encriptación del monedero</translation>
     </message>
     <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX se cerrará ahora para completar el proceso de encriptación. Recuerde que la encriptación no le protege completamente del robo de sus PIVs frente a malware que infecte su ordenador.</translation>
+        <source>GFC will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GFCs from being stolen by malware infecting your computer.</source>
+        <translation>GFC se cerrará ahora para completar el proceso de encriptación. Recuerde que la encriptación no le protege completamente del robo de sus GFCs frente a malware que infecte su ordenador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>¿Está seguro de que quiere encriptar su monedero?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
-        <translation>Advertencia: si encripta su monedero y pierde su clave de seguridad, ¡&lt;b&gt;PERDERÁ TODOS SUS PIV&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GFC&lt;/b&gt;!</source>
+        <translation>Advertencia: si encripta su monedero y pierde su clave de seguridad, ¡&lt;b&gt;PERDERÁ TODOS SUS GFC&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -254,12 +254,12 @@
         <translation>Dirección:</translation>
     </message>
     <message>
-        <source>Enter a PIVX Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Ingrese una dirección PIVX que le gustaría encriptar usando BIP 38. Ingrese una contraseña en el cuadro del medio. Presione encriptar para calcular la clave privada encriptada.</translation>
+        <source>Enter a GFC Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Ingrese una dirección GFC que le gustaría encriptar usando BIP 38. Ingrese una contraseña en el cuadro del medio. Presione encriptar para calcular la clave privada encriptada.</translation>
     </message>
     <message>
-        <source>The PIVX address to encrypt</source>
-        <translation>La dirección PIVX a encriptar</translation>
+        <source>The GFC address to encrypt</source>
+        <translation>La dirección GFC a encriptar</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this PIVX address</source>
-        <translation>Cifrar la llave privada para esta dirección PIVX</translation>
+        <source>Encrypt the private key for this GFC address</source>
+        <translation>Cifrar la llave privada para esta dirección GFC</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -530,8 +530,8 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The PIVX address to sign the message with</source>
-        <translation>Dirección PIVX con la que firmar el mensaje</translation>
+        <source>The GFC address to sign the message with</source>
+        <translation>Dirección GFC con la que firmar el mensaje</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -554,8 +554,8 @@
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PIVX address</source>
-        <translation>Firme el mensaje para probar que Ud. es el propietario de esta dirección PIVX</translation>
+        <source>Sign the message to prove you own this GFC address</source>
+        <translation>Firme el mensaje para probar que Ud. es el propietario de esta dirección GFC</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -645,10 +645,10 @@
     </message>
     </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZGFCControlDialog</name>
     </context>
 <context>
-    <name>pivx-core</name>
+    <name>gofund-core</name>
     <message>
         <source>Zapping all transactions from wallet...</source>
         <translation>Saltando todas las transacciones del monedero...</translation>

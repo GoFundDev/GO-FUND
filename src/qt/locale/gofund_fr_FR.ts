@@ -62,12 +62,12 @@
         <translation>Adresses de réception</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Voici vos adresses PIVX pour envoyer des paiements.  Assurez-vous de toujours vérifier le montant et l'adresse de réception avant d'envoyer les jetons</translation>
+        <source>These are your GFC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Voici vos adresses GFC pour envoyer des paiements.  Assurez-vous de toujours vérifier le montant et l'adresse de réception avant d'envoyer les jetons</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Voici vos adresses PIVX pour les réceptions de vos paiments. Il est recommandé d'utiliser une nouvelle adresse de réception pour chaque transaction.</translation>
+        <source>These are your GFC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Voici vos adresses GFC pour les réceptions de vos paiments. Il est recommandé d'utiliser une nouvelle adresse de réception pour chaque transaction.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Confirmer le cryptage du portefeuille</translation>
     </message>
     <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX va maintenant se fermer pour finir le processus de cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos PIVs d'un vol par un malware ayant infecté votre ordinateur. </translation>
+        <source>GFC will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GFCs from being stolen by malware infecting your computer.</source>
+        <translation>GFC va maintenant se fermer pour finir le processus de cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos GFCs d'un vol par un malware ayant infecté votre ordinateur. </translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Êtes-vous sûr de vouloir crypter votre portefeuille?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
-        <translation>Attention : si vous cryptez votre portefeuille et perdez votre phrase secrète, vous &lt;b&gt;PERDREZ TOUS VOS PIV&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GFC&lt;/b&gt;!</source>
+        <translation>Attention : si vous cryptez votre portefeuille et perdez votre phrase secrète, vous &lt;b&gt;PERDREZ TOUS VOS GFC&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -254,12 +254,12 @@
         <translation>Adresse :</translation>
     </message>
     <message>
-        <source>Enter a PIVX Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Entrez une adresse PIVX que vous voulez chiffrer en utilisant BIP 38. Entrez une phrase secrète dans le champ du milieu. Cliquez sur chiffrer pour calculer le chiffrage de la clé privée.</translation>
+        <source>Enter a GFC Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Entrez une adresse GFC que vous voulez chiffrer en utilisant BIP 38. Entrez une phrase secrète dans le champ du milieu. Cliquez sur chiffrer pour calculer le chiffrage de la clé privée.</translation>
     </message>
     <message>
-        <source>The PIVX address to encrypt</source>
-        <translation>L'adresse PIVX à chiffrer</translation>
+        <source>The GFC address to encrypt</source>
+        <translation>L'adresse GFC à chiffrer</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this PIVX address</source>
-        <translation>Chiffrer la clef privée pour cette adresse PIVX</translation>
+        <source>Encrypt the private key for this GFC address</source>
+        <translation>Chiffrer la clef privée pour cette adresse GFC</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -433,8 +433,8 @@
         <translation>Afficher l'historique de transaction</translation>
     </message>
     <message>
-        <source>Privacy Actions for zPIV</source>
-        <translation>Actions confidentielles pour zPIV</translation>
+        <source>Privacy Actions for zGFC</source>
+        <translation>Actions confidentielles pour zGFC</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -645,16 +645,16 @@
         <translation>Onglets de la barre d'outils</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>GFC Core</source>
+        <translation>GFC Core</translation>
     </message>
     <message>
-        <source>Send coins to a PIVX address</source>
-        <translation>Envoyer des pièces à une adresse PIVX</translation>
+        <source>Send coins to a GFC address</source>
+        <translation>Envoyer des pièces à une adresse GFC</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and pivx: URIs)</source>
-        <translation>Requêtes de paiements (Génère des QR codes et des URIs PIVX)</translation>
+        <source>Request payments (generates QR codes and gfc: URIs)</source>
+        <translation>Requêtes de paiements (Génère des QR codes et des URIs GFC)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -669,24 +669,24 @@
         <translation>Afficher les masternodes</translation>
     </message>
     <message>
-        <source>&amp;About PIVX Core</source>
-        <translation>A &amp;propos de PIVX Core</translation>
+        <source>&amp;About GFC Core</source>
+        <translation>A &amp;propos de GFC Core</translation>
     </message>
     <message>
-        <source>Show information about PIVX Core</source>
-        <translation>Afficher les information concernant PIVX Core</translation>
+        <source>Show information about GFC Core</source>
+        <translation>Afficher les information concernant GFC Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for PIVX</source>
-        <translation>Modifier les options de configuration pour PIVX</translation>
+        <source>Modify configuration options for GFC</source>
+        <translation>Modifier les options de configuration pour GFC</translation>
     </message>
     <message>
-        <source>Sign messages with your PIVX addresses to prove you own them</source>
-        <translation>Signer les messages avec votre adresse PIVX pour prouver qu'elles sont bien à vous.</translation>
+        <source>Sign messages with your GFC addresses to prove you own them</source>
+        <translation>Signer les messages avec votre adresse GFC pour prouver qu'elles sont bien à vous.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PIVX addresses</source>
-        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse PIVX spécifiée</translation>
+        <source>Verify messages to ensure they were signed with specified GFC addresses</source>
+        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse GFC spécifiée</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -717,8 +717,8 @@
         <translation>Ouvrir le fichier de configuration de Masternode</translation>
     </message>
     <message>
-        <source>Open a PIVX: URI or payment request</source>
-        <translation>Ouvrir un PIVX: URI ou requête de paiement</translation>
+        <source>Open a GFC: URI or payment request</source>
+        <translation>Ouvrir un GFC: URI ou requête de paiement</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -729,16 +729,16 @@
         <translation>Fenêtre de Explorateur de Bloc</translation>
     </message>
     <message>
-        <source>Show the PIVX Core help message to get a list with possible PIVX command-line options</source>
-        <translation>Afficher les message d'aide de PIVX Core pour avoir les options pour ligne de commande</translation>
+        <source>Show the GFC Core help message to get a list with possible GFC command-line options</source>
+        <translation>Afficher les message d'aide de GFC Core pour avoir les options pour ligne de commande</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
-        <translation>PIVX Core client</translation>
+        <source>GFC Core client</source>
+        <translation>GFC Core client</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to PIVX network</source>
-        <translation><numerusform>connexion(s) active(s) au réseau PIVX</numerusform><numerusform>connexion(s) active(s) au réseau PIVX</numerusform></translation>
+        <source>%n active connection(s) to GFC network</source>
+        <translation><numerusform>connexion(s) active(s) au réseau GFC</numerusform><numerusform>connexion(s) active(s) au réseau GFC</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -876,8 +876,8 @@ Adresse : %4
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (pivx.conf).</source>
-        <translation>Toutes les transaction ne seront pas affichés. Pour voir toutes les transactions, vous devez régler txindex=1 dans le fichier de configuration (pivx.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (gfc.conf).</source>
+        <translation>Toutes les transaction ne seront pas affichés. Pour voir toutes les transactions, vous devez régler txindex=1 dans le fichier de configuration (gfc.conf).</translation>
     </message>
 </context>
 <context>
@@ -1114,8 +1114,8 @@ Adresse : %4
         <translation>Ce label devient rouge si l'un des destinataires reçoit un montant inférieur à %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Peut varier de +/- %1 upiv par entrée.</translation>
+        <source>Can vary +/- %1 ugfc per input.</source>
+        <translation>Peut varier de +/- %1 ugfc par entrée.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1165,8 +1165,8 @@ Adresse : %4
         <translation>Modifier l'adresse d'envoi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PIVX address.</source>
-        <translation>L'adresse entrée "%1" n'est pas une adresse PIVX valide</translation>
+        <source>The entered address "%1" is not a valid GFC address.</source>
+        <translation>L'adresse entrée "%1" n'est pas une adresse GFC valide</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1211,16 +1211,16 @@ Adresse : %4
         <translation>version</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>GFC Core</source>
+        <translation>GFC Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About PIVX Core</source>
-        <translation>A propos de PIVX Core</translation>
+        <source>About GFC Core</source>
+        <translation>A propos de GFC Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1262,12 +1262,12 @@ Adresse : %4
         <translation>Bienvenu</translation>
     </message>
     <message>
-        <source>Welcome to PIVX Core.</source>
-        <translation>Bienvenue à PIVX Core</translation>
+        <source>Welcome to GFC Core.</source>
+        <translation>Bienvenue à GFC Core</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
-        <translation>Comme c'est la première fois que le programme est lancé, vous pouvez choisir où PIVX Core va stocker ses données.</translation>
+        <source>As this is the first time the program is launched, you can choose where GFC Core will store its data.</source>
+        <translation>Comme c'est la première fois que le programme est lancé, vous pouvez choisir où GFC Core va stocker ses données.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1278,8 +1278,8 @@ Adresse : %4
         <translation>Utiliser un répertoire spécifique de données </translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>GFC Core</source>
+        <translation>GFC Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1416,12 +1416,12 @@ Adresse : %4
         <translation>Saisir l'adresse à laquelle envoyer</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PIVX addresses after it matures.
-To Add: enter percentage to give and PIVX address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other GFC addresses after it matures.
+To Add: enter percentage to give and GFC address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>L'Envoi-multiple vous perment d'envoyer automatiquement jusqu'à 100% de vos récompenses Stake ou Masternode à une liste d'adresses PIVX  après leur maturité.
-Pour ajouter: entrez le pourcentage à donner et l'adresse PIVX à ajouter au vecteur d'Envoi-multiple.
+        <translation>L'Envoi-multiple vous perment d'envoyer automatiquement jusqu'à 100% de vos récompenses Stake ou Masternode à une liste d'adresses GFC  après leur maturité.
+Pour ajouter: entrez le pourcentage à donner et l'adresse GFC à ajouter au vecteur d'Envoi-multiple.
 Pour supprimer: Entrez l'adresse à effacer et appuyez sur Supprimer.
 L'Envoi-multiple ne sera activé que si vous avez cliqué sur Activer</translation>
     </message>
@@ -1640,8 +1640,8 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>Adresse / Montant:</translation>
     </message>
     <message>
-        <source>Add destinations to send PIV to</source>
-        <translation>Ajouter des destinations pour envoyer PIV</translation>
+        <source>Add destinations to send GFC to</source>
+        <translation>Ajouter des destinations pour envoyer GFC</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1727,48 +1727,48 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>Veuillez sélectionner un niveau de confidentialité.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 PIV</source>
-        <translation>Utiliser 2 masternodes différentes pour mélanger les fonds jusqu'a 10000 PIV</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 GFC</source>
+        <translation>Utiliser 2 masternodes différentes pour mélanger les fonds jusqu'a 10000 GFC</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 PIV</source>
-        <translation>Utiliser 8 masternodes différentes pour mélanger les fonds jusqu'a 10000 PIV</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 GFC</source>
+        <translation>Utiliser 8 masternodes différentes pour mélanger les fonds jusqu'a 10000 GFC</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utiliser 16 masternodes différents</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PIV to anonymize 10000 PIV</source>
-        <translation>Cette option est la plus rapide, et coutera ~0.025 PIV pour anonymiser 10000 PIV</translation>
+        <source>This option is the quickest and will cost about ~0.025 GFC to anonymize 10000 GFC</source>
+        <translation>Cette option est la plus rapide, et coutera ~0.025 GFC pour anonymiser 10000 GFC</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 PIV to anonymize 10000 PIV</source>
-        <translation>Cette option est moyennement rapide, et coutera 0.05 PIV pour anonymiser 10000 PIV</translation>
+        <source>This option is moderately fast and will cost about 0.05 GFC to anonymize 10000 GFC</source>
+        <translation>Cette option est moyennement rapide, et coutera 0.05 GFC pour anonymiser 10000 GFC</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Il s'agit de l'option la plus lente est la plus sécurisé. Utiliser l'anonymat maximum coutera</translation>
     </message>
     <message>
-        <source>0.1 PIV per 10000 PIV you anonymize.</source>
-        <translation>0.1 PIV par 10000 PIV vous anonymisez.</translation>
+        <source>0.1 GFC per 10000 GFC you anonymize.</source>
+        <translation>0.1 GFC par 10000 GFC vous anonymisez.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Configuration de l'Obfuscation</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening PIVX's configuration screen.</source>
-        <translation>L'Obfuscation a été réglé avec succès à base (%1 et 2 tours). Vous pouvez changer ce paramètre à tout moment depuis l'écran de configuration PIVX.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening GFC's configuration screen.</source>
+        <translation>L'Obfuscation a été réglé avec succès à base (%1 et 2 tours). Vous pouvez changer ce paramètre à tout moment depuis l'écran de configuration GFC.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening PIVX's configuration screen.</source>
-        <translation>L'Obfuscation a été réglé avec succès à élevé (%1 et 8 tours). Vous pouvez changer ce paramètre à tout moment depuis l'écran de configuration PIVX.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening GFC's configuration screen.</source>
+        <translation>L'Obfuscation a été réglé avec succès à élevé (%1 et 8 tours). Vous pouvez changer ce paramètre à tout moment depuis l'écran de configuration GFC.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening PIVX's configuration screen.</source>
-        <translation>L'Obfuscation a été réglé avec succès à maximum (%1 et 16 tours). Vous pouvez changer ce paramètre à tout moment depuis l'écran de configuration PIVX.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening GFC's configuration screen.</source>
+        <translation>L'Obfuscation a été réglé avec succès à maximum (%1 et 16 tours). Vous pouvez changer ce paramètre à tout moment depuis l'écran de configuration GFC.</translation>
     </message>
 </context>
 <context>
@@ -1821,8 +1821,8 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>SI vous désactivez la dépense de la monnaire non confirmée, la monnaie rendue sur une transaction &lt;br/&gt;ne peut pas être utilisée tant que celle-ci n'a pas reçue au moins une confirmation &lt;br/&gt;Ceci implique également la manière dont votre solde est calculé.</translation>
     </message>
     <message>
-        <source>Automatically open the PIVX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir automatiquement le port du client PIVX sur le routeur. Ceci fonctionne uniquement si votre routeur prend en charge UPnP et que celui-ci est activé.</translation>
+        <source>Automatically open the GFC client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir automatiquement le port du client GFC sur le routeur. Ceci fonctionne uniquement si votre routeur prend en charge UPnP et que celui-ci est activé.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1841,12 +1841,12 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start PIVX after logging in to the system.</source>
-        <translation>Démarrez PIVX automatiquement après vous être connecté au système.</translation>
+        <source>Automatically start GFC after logging in to the system.</source>
+        <translation>Démarrez GFC automatiquement après vous être connecté au système.</translation>
     </message>
     <message>
-        <source>&amp;Start PIVX on system login</source>
-        <translation>Démarrer PIVX au démarrage système</translation>
+        <source>&amp;Start GFC on system login</source>
+        <translation>Démarrer GFC au démarrage système</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1873,46 +1873,46 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>Réseau</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting PIVX.</source>
-        <translation>La langue de l'interface utilisateur peut être définie ici. Ce paramètre prendra effet après le redémarrage de PIVX.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting GFC.</source>
+        <translation>La langue de l'interface utilisateur peut être définie ici. Ce paramètre prendra effet après le redémarrage de GFC.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/pivx-project/pivx-project-translations</source>
+https://www.transifex.com/gfc-project/gfc-project-translations</source>
         <translation>Langue manquante ou traduction incomplète? Aidez-nous à traduire ce projet ici:
-https://www.transifex.com/pivx-project/pivx-project-translations</translation>
+https://www.transifex.com/gfc-project/gfc-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Répertorier les port utilisant UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Activé l'auto-monnayage de PIV unités en zPIV</translation>
+        <source>Enable automatic minting of GFC units to zGFC</source>
+        <translation>Activé l'auto-monnayage de GFC unités en zGFC</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Activé ZPIV Auto-monnayage</translation>
+        <source>Enable zGFC Automint</source>
+        <translation>Activé ZGFC Auto-monnayage</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Pourcentage des PIV entrants qui seront automatiquement convertis en zPIV via le protocole Zerocoin (min. 10%)</translation>
+        <source>Percentage of incoming GFC which get automatically converted to zGFC via Zerocoin Protocol (min: 10%)</source>
+        <translation>Pourcentage des GFC entrants qui seront automatiquement convertis en zGFC via le protocole Zerocoin (min. 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Pourcentage de zPIV auto-monnayé</translation>
+        <source>Percentage of autominted zGFC</source>
+        <translation>Pourcentage de zGFC auto-monnayé</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Dénomination préférée d'auto-monnayage zPIV</translation>
+        <source>Preferred Automint zGFC Denomination</source>
+        <translation>Dénomination préférée d'auto-monnayage zGFC</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Seuil de partage du Stake</translation>
     </message>
     <message>
-        <source>Connect to the PIVX network through a SOCKS5 proxy.</source>
-        <translation>Se connetcer au réseau PIVX via un proxy SOCKS5.</translation>
+        <source>Connect to the GFC network through a SOCKS5 proxy.</source>
+        <translation>Se connetcer au réseau GFC via un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2066,8 +2066,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Solde total, incluant les pièces indisponibles.</translation>
     </message>
     <message>
-        <source>PIV Balance</source>
-        <translation>Solde de PIV</translation>
+        <source>GFC Balance</source>
+        <translation>Solde de GFC</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2090,18 +2090,18 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Solde courant bloqué dans des adresses témoin</translation>
     </message>
     <message>
-        <source>Your current PIVX balance, unconfirmed and immature transactions included</source>
-        <translation>Votre solde PIVX actuel, incluant les transactions non confirmées et immatures</translation>
+        <source>Your current GFC balance, unconfirmed and immature transactions included</source>
+        <translation>Votre solde GFC actuel, incluant les transactions non confirmées et immatures</translation>
     </message>
     <message>
-        <source>zPIV Balance</source>
-        <translation>Solde de zPIV</translation>
+        <source>zGFC Balance</source>
+        <translation>Solde de zGFC</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zPIV are spendable.</source>
+These zGFC are spendable.</source>
         <translation>Maturité: plus de 20 confirmations et plus de 1 monnayer de la même dénomination après sa frappe.
-Ces zPIV sont dépensables.</translation>
+Ces zGFC sont dépensables.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2110,8 +2110,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Immature: confirmé, mais moins de 1 monnayer de la même dénomination après sa frappe</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PIVX network after a connection is established, but this process has not completed yet.</source>
-        <translation>Les informations affichées pourraient être périmées. Votre portefeuille se synchronise automatiquement avec le réseau PIVX après l'établissement d'une connexion, mais ce processus n'est pas encore terminé.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the GFC network after a connection is established, but this process has not completed yet.</source>
+        <translation>Les informations affichées pourraient être périmées. Votre portefeuille se synchronise automatiquement avec le réseau GFC après l'établissement d'une connexion, mais ce processus n'est pas encore terminé.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -2154,8 +2154,8 @@ Immature: confirmé, mais moins de 1 monnayer de la même dénomination après s
         <translation>Dépensable:</translation>
     </message>
     <message>
-        <source>Locked PIV or Masternode collaterals. These are excluded from zPIV minting.</source>
-        <translation>PIV Verrouillé ou Masternode collatéraux. Ceux-ci sont exclus de la monnayage zPIV.</translation>
+        <source>Locked GFC or Masternode collaterals. These are excluded from zGFC minting.</source>
+        <translation>GFC Verrouillé ou Masternode collatéraux. Ceux-ci sont exclus de la monnayage zGFC.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2166,8 +2166,8 @@ Immature: confirmé, mais moins de 1 monnayer de la même dénomination après s
         <translation>Non confirmé:</translation>
     </message>
     <message>
-        <source>Your current zPIV balance, unconfirmed and immature zPIV included.</source>
-        <translation>Votre solde courant zPIV, incluant les zPIV non confirmés et immatures.</translation>
+        <source>Your current zGFC balance, unconfirmed and immature zGFC included.</source>
+        <translation>Votre solde courant zGFC, incluant les zGFC non confirmés et immatures.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2178,10 +2178,10 @@ Immature: confirmé, mais moins de 1 monnayer de la même dénomination après s
         <translation>désynchronisé</translation>
     </message>
     <message>
-        <source>Current percentage of zPIV.
+        <source>Current percentage of zGFC.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Le pourcentage actuel de zPIV.
+        <translation>Le pourcentage actuel de zGFC.
 Si Auto-monnayage est activé, ce pourcentage sera réglé autour du pourcentage Auto-monnayage configuré (par défaut = 10%).</translation>
     </message>
     <message>
@@ -2189,14 +2189,14 @@ Si Auto-monnayage est activé, ce pourcentage sera réglé autour du pourcentage
         <translation>Auto-monnayage est actuellement activé et mis à</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in pivx.conf.</source>
-        <translation>Pour désactiver Auto-monnayage, ajoutez 'enablezeromint = 0' dans pivx.conf.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in gfc.conf.</source>
+        <translation>Pour désactiver Auto-monnayage, ajoutez 'enablezeromint = 0' dans gfc.conf.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in gfc.conf</source>
         <translation>Auto-monnayage est actuellement désactivé.
-Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1' dans le fichier pivx.conf</translation>
+Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1' dans le fichier gfc.conf</translation>
     </message>
 </context>
 <context>
@@ -2222,12 +2222,12 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>Adresse de paiement invalide %1</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
-        <translation>Impossible de démarrer pivx: gestionnaire click-to-pay</translation>
+        <source>Cannot start gfc: click-to-pay handler</source>
+        <translation>Impossible de démarrer gfc: gestionnaire click-to-pay</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid PIVX address or malformed URI parameters.</source>
-        <translation>L'URI ne peut pas être analysée! Cela peut être dû à une adresse PIVX invalide ou à des paramètres URI incorrectes.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid GFC address or malformed URI parameters.</source>
+        <translation>L'URI ne peut pas être analysée! Cela peut être dû à une adresse GFC invalide ou à des paramètres URI incorrectes.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2312,8 +2312,8 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>Actions Zerocoin:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PIVX network after a connection is established, but this process has not completed yet.</source>
-        <translation>Les informations affichées pourraient être périmées. Votre portefeuille se synchronise automatiquement avec le réseau PIVX après l'établissement d'une connexion, mais ce processus n'est pas encore terminé.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the GFC network after a connection is established, but this process has not completed yet.</source>
+        <translation>Les informations affichées pourraient être périmées. Votre portefeuille se synchronise automatiquement avec le réseau GFC après l'établissement d'une connexion, mais ce processus n'est pas encore terminé.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2324,8 +2324,8 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>0</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zGFC</source>
+        <translation>zGFC</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2336,8 +2336,8 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>Disponible pour Monnayage:</translation>
     </message>
     <message>
-        <source>0.000 000 00 PIV</source>
-        <translation>0.000 000 00 PIV</translation>
+        <source>0.000 000 00 GFC</source>
+        <translation>0.000 000 00 GFC</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2376,16 +2376,16 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>CONFIDENTIALITÉ</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zPIV</source>
-        <translation>Entrez un montant de PIV à convertir en zPIV</translation>
+        <source>Enter an amount of GFC to convert to zGFC</source>
+        <translation>Entrez un montant de GFC à convertir en zGFC</translation>
     </message>
     <message>
-        <source>zPIV Control</source>
-        <translation>Contrôle zPIV</translation>
+        <source>zGFC Control</source>
+        <translation>Contrôle zGFC</translation>
     </message>
     <message>
-        <source>zPIV Selected:</source>
-        <translation>zPIV sélectionné:</translation>
+        <source>zGFC Selected:</source>
+        <translation>zGFC sélectionné:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2400,24 +2400,24 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>Dépenser Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zPIV for spending</source>
-        <translation>zPIV disponibles (matures et dépensables) pour dépenser</translation>
+        <source>Available (mature and spendable) zGFC for spending</source>
+        <translation>zGFC disponibles (matures et dépensables) pour dépenser</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Solde disponible:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zPIV for spending
+        <source>Available (mature and spendable) zGFC for spending
 
-zPIV are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>ZPIV disponible (mature et utilisable) pour les dépenses
+zGFC are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>ZGFC disponible (mature et utilisable) pour les dépenses
 
-Les zPIV sont matures lorsqu'elles ont plus de 20 confirmations ET plus de 2 monnayent de même dénomination après ils était monnayer</translation>
+Les zGFC sont matures lorsqu'elles ont plus de 20 confirmations ET plus de 2 monnayent de même dénomination après ils était monnayer</translation>
     </message>
     <message>
-        <source>0 zPIV</source>
-        <translation>0 zPIV</translation>
+        <source>0 zGFC</source>
+        <translation>0 zGFC</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2436,8 +2436,8 @@ Les zPIV sont matures lorsqu'elles ont plus de 20 confirmations ET plus de 2 mon
         <translation>Payer à :</translation>
     </message>
     <message>
-        <source>The PIVX address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>L'adresse PIVX à laquelle nevoyer le paiement. Créé un paiement à vous même lorsque ce champs est vide.</translation>
+        <source>The GFC address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>L'adresse GFC à laquelle nevoyer le paiement. Créé un paiement à vous même lorsque ce champs est vide.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2488,8 +2488,8 @@ Les zPIV sont matures lorsqu'elles ont plus de 20 confirmations ET plus de 2 mon
         <translation>Statistiques Zerocoin:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zPIV</source>
-        <translation>Solde total incluant les zPIV non confirmés et immatures</translation>
+        <source>Total Balance including unconfirmed and immature zGFC</source>
+        <translation>Solde total incluant les zGFC non confirmés et immatures</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2510,24 +2510,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Immature: confirmé, mais moins de 1 monnayer de la même dénomination après sa frappe</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zPIV minting.
+        <source>Show the current status of automatic zGFC minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to pivx.conf
-- disable: add 'enablezeromint=0' to pivx.conf
+- enable: add 'enablezeromint=1' to gfc.conf
+- disable: add 'enablezeromint=0' to gfc.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zPIV
+- menu Settings-&gt;Options-&gt;Percentage of autominted zGFC
 
 </source>
-        <translation>Afficher l'état actuel de monnayage automatique zPIV.
+        <translation>Afficher l'état actuel de monnayage automatique zGFC.
 
 Pour changer le statut (redémarrage requis):
-- enable: ajoute 'enablezeromint = 1' au fichier pivx.conf
-- disable: ajoute 'enablezeromint = 0' au fichier pivx.conf
+- enable: ajoute 'enablezeromint = 1' au fichier gfc.conf
+- disable: ajoute 'enablezeromint = 0' au fichier gfc.conf
 
 Pour changer le pourcentage (pas de redémarrage requis):
-- menu Paramètres-&gt; Options-&gt; Pourcentage de zPIV auto-monnayé
+- menu Paramètres-&gt; Options-&gt; Pourcentage de zGFC auto-monnayé
 
 </translation>
     </message>
@@ -2724,12 +2724,12 @@ Maximum allowed: </source>
 Maximum autorisé:</translation>
     </message>
     <message>
-        <source>zPIV Spend #: </source>
-        <translation>Dépense zPIV #:</translation>
+        <source>zGFC Spend #: </source>
+        <translation>Dépense zGFC #:</translation>
     </message>
     <message>
-        <source>zPIV Mint</source>
-        <translation>Monnayer zPIV</translation>
+        <source>zGFC Mint</source>
+        <translation>Monnayer zGFC</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2744,12 +2744,12 @@ Maximum autorisé:</translation>
         <translation>Pourcentage cible configuré: &lt;b&gt;</translation>
     </message>
     <message>
-        <source>zPIV is currently disabled due to maintenance.</source>
-        <translation>zPIV est actuellement désactivé pour cause de maintenance.</translation>
+        <source>zGFC is currently disabled due to maintenance.</source>
+        <translation>zGFC est actuellement désactivé pour cause de maintenance.</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>zPIV est actuellement en cours de maintenance.</translation>
+        <source>zGFC is currently undergoing maintenance.</source>
+        <translation>zGFC est actuellement en cours de maintenance.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2836,8 +2836,8 @@ Maximum autorisé:</translation>
         <translation>Monnayez réussi</translation>
     </message>
     <message>
-        <source> zPIV in </source>
-        <translation>zPIV dans</translation>
+        <source> zGFC in </source>
+        <translation>zGFC dans</translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2860,8 +2860,8 @@ Maximum autorisé:</translation>
         <translation>Aucune adresse 'Payer à' de fournie, création d'un paiement local</translation>
     </message>
     <message>
-        <source>Invalid Pivx Address</source>
-        <translation>Adresse Pivx incorrecte</translation>
+        <source>Invalid GFC Address</source>
+        <translation>Adresse GFC incorrecte</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2892,13 +2892,13 @@ Maximum autorisé:</translation>
         <translation>Confirmer l'envoi des pièces</translation>
     </message>
     <message>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
-        <translation>La version 1 de zPIV requiert un niveau de sécurité de 100 pour les dépenser.
+        <source>Version 1 zGFC require a security level of 100 to successfully spend.</source>
+        <translation>La version 1 de zGFC requiert un niveau de sécurité de 100 pour les dépenser.
 </translation>
     </message>
     <message>
-        <source>Failed to spend zPIV</source>
-        <translation>Échec de la dépense de zPIV</translation>
+        <source>Failed to spend zGFC</source>
+        <translation>Échec de la dépense de zGFC</translation>
     </message>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
@@ -2958,8 +2958,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Montant</translation>
     </message>
     <message>
-        <source>Enter a PIVX address (e.g. %1)</source>
-        <translation>Entrez uen adresse PIVX (par ex. %1)</translation>
+        <source>Enter a GFC address (e.g. %1)</source>
+        <translation>Entrez uen adresse GFC (par ex. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -3096,7 +3096,7 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Chaîne de bloc</translation>
     </message>
     <message>
-        <source>Open the PIVX debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the GFC debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Ouvrir le fichier journal de déboguage depuis le répertoire de données courant. Cela peut prendre quelques minutes pour les fichier journaux volumineux.</translation>
     </message>
     <message>
@@ -3232,8 +3232,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Chemin du répertoire de sauvegarde personnalisé:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>Chemin du répertoire de sauvegarde zPIV personnalisé:</translation>
+        <source>Custom zGFC Backup Path:</source>
+        <translation>Chemin du répertoire de sauvegarde zGFC personnalisé:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3312,8 +3312,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Sortie:</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
-        <translation>Bienvenue sur la console PIVX RPC.</translation>
+        <source>Welcome to the GFC RPC console.</source>
+        <translation>Bienvenue sur la console GFC RPC.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3439,16 +3439,16 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Un label Un optionnel à associer à la nouvelle adresse de réception.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the PIVX network.</source>
-        <translation>Un message optionnel à ajouter à la demande de paiement, lequel sera affiché lorsque la demande sera ouverte. Note: Le message ne sera pas renvoyé avec le paiement sur le réseaux PIVX.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the GFC network.</source>
+        <translation>Un message optionnel à ajouter à la demande de paiement, lequel sera affiché lorsque la demande sera ouverte. Note: Le message ne sera pas renvoyé avec le paiement sur le réseaux GFC.</translation>
     </message>
     <message>
         <source>RECEIVE</source>
         <translation>RECEVOIR</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the PIVX network.</source>
-        <translation>Un message optionnel à ajouter à la demande de paiement, lequel sera affiché lorsque la demande sera ouverte. &lt;br /&gt; Note: Le message ne sera pas renvoyé avec le paiement sur le réseaux PIVX.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the GFC network.</source>
+        <translation>Un message optionnel à ajouter à la demande de paiement, lequel sera affiché lorsque la demande sera ouverte. &lt;br /&gt; Note: Le message ne sera pas renvoyé avec le paiement sur le réseaux GFC.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3676,8 +3676,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Taille UTXO:</translation>
     </message>
     <message>
-        <source>0 PIV</source>
-        <translation>0 PIV</translation>
+        <source>0 GFC</source>
+        <translation>0 GFC</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3728,8 +3728,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Pièces automatiquement sélectionnées</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for PIVX transactions than the network can process.</source>
-        <translation>Payer les frais minimum est convenable tant qu'il y a moins de volume de transactions que d'espace dans les blocs. &lt;br /&gt; Mais sachez que cela peut aboutir à une transaction qui ne se confirmera jamais lorsqu'il y aura plus de transactions PIVX que le réseau ne peut en traiter.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for GFC transactions than the network can process.</source>
+        <translation>Payer les frais minimum est convenable tant qu'il y a moins de volume de transactions que d'espace dans les blocs. &lt;br /&gt; Mais sachez que cela peut aboutir à une transaction qui ne se confirmera jamais lorsqu'il y aura plus de transactions GFC que le réseau ne peut en traiter.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3776,8 +3776,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Ajouter un destinataire</translation>
     </message>
     <message>
-        <source>Anonymized PIV</source>
-        <translation>PIV anonymisé</translation>
+        <source>Anonymized GFC</source>
+        <translation>GFC anonymisé</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3824,8 +3824,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>L'outil de séparation de bloc ne fonctionne pas avec les adresses multiples. Réessayez.</translation>
     </message>
     <message>
-        <source>Warning: Invalid PIVX address</source>
-        <translation>Attention: adresse PIVX invalide</translation>
+        <source>Warning: Invalid GFC address</source>
+        <translation>Attention: adresse GFC invalide</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -3919,8 +3919,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Payer à :</translation>
     </message>
     <message>
-        <source>The PIVX address to send the payment to</source>
-        <translation>L'adresse PIVX à laquelle envoyer le paiement</translation>
+        <source>The GFC address to send the payment to</source>
+        <translation>L'adresse GFC à laquelle envoyer le paiement</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3981,8 +3981,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Signer le message</translation>
     </message>
     <message>
-        <source>The PIVX address to sign the message with</source>
-        <translation>L'adresse PIVX avec laquelle signer le message</translation>
+        <source>The GFC address to sign the message with</source>
+        <translation>L'adresse GFC avec laquelle signer le message</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4009,16 +4009,16 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PIVX address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse PIVX</translation>
+        <source>Sign the message to prove you own this GFC address</source>
+        <translation>Signer le message pour prouver que vous possédez cette adresse GFC</translation>
     </message>
     <message>
-        <source>The PIVX address the message was signed with</source>
-        <translation>L'adresse PIVX avec laquelle le message a été signé</translation>
+        <source>The GFC address the message was signed with</source>
+        <translation>L'adresse GFC avec laquelle le message a été signé</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PIVX address</source>
-        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse PIVX renseignée</translation>
+        <source>Verify the message to ensure it was signed with the specified GFC address</source>
+        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse GFC renseignée</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -4080,8 +4080,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>GFC Core</source>
+        <translation>GFC Core</translation>
     </message>
     </context>
 <context>
@@ -4152,40 +4152,40 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Reçu via Obfuscation</translation>
     </message>
     <message>
-        <source>PIV Stake</source>
-        <translation>PIV Stake</translation>
+        <source>GFC Stake</source>
+        <translation>GFC Stake</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV Stake</translation>
+        <source>zGFC Stake</source>
+        <translation>zGFC Stake</translation>
     </message>
     <message>
-        <source>Converted PIV to zPIV</source>
-        <translation>PIV converti en zPIV</translation>
+        <source>Converted GFC to zGFC</source>
+        <translation>GFC converti en zGFC</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>zPIV dépensés</translation>
+        <source>Spent zGFC</source>
+        <translation>zGFC dépensés</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>PIV reçu depuis zPIV</translation>
+        <source>Received GFC from zGFC</source>
+        <translation>GFC reçu depuis zGFC</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>Monnaie rendue à partir d'une dépense zPIV frappée comme zPIV </translation>
+        <source>Minted Change as zGFC from zGFC Spend</source>
+        <translation>Monnaie rendue à partir d'une dépense zGFC frappée comme zGFC </translation>
     </message>
     <message>
-        <source>Converted zPIV to PIV</source>
-        <translation>zPIV converti en PIV</translation>
+        <source>Converted zGFC to GFC</source>
+        <translation>zGFC converti en GFC</translation>
     </message>
     <message>
-        <source>Anonymous (zPIV Transaction)</source>
-        <translation>Anonyme (transaction zPIV)</translation>
+        <source>Anonymous (zGFC Transaction)</source>
+        <translation>Anonyme (transaction zGFC)</translation>
     </message>
     <message>
-        <source>Anonymous (zPIV Stake)</source>
-        <translation>Anonyme (zPIV Stake)</translation>
+        <source>Anonymous (zGFC Stake)</source>
+        <translation>Anonyme (zGFC Stake)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4343,12 +4343,12 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Une erreur est survenue lors de la tentative de sauvegarde de l'historique de transaction vers %1.</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>PIV reçu depuis zPIV</translation>
+        <source>Received GFC from zGFC</source>
+        <translation>GFC reçu depuis zGFC</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zPIV</source>
-        <translation>Dépense Zerocoin, monnaie rendue en zPIV</translation>
+        <source>Zerocoin Spend, Change in zGFC</source>
+        <translation>Dépense Zerocoin, monnaie rendue en zGFC</translation>
     </message>
     </context>
 <context>
@@ -4388,7 +4388,7 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZGFCControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantité </translation>
@@ -4398,19 +4398,19 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>0</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zGFC</source>
+        <translation>zGFC</translation>
     </message>
     </context>
 <context>
-    <name>pivx-core</name>
+    <name>gofund-core</name>
     <message>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
-        <translation>Active ou désactive la fonctionnalité de staking pour les entrées PIV (0-1, par défaut: %u)</translation>
+        <source>Enable or disable staking functionality for GFC inputs (0-1, default: %u)</source>
+        <translation>Active ou désactive la fonctionnalité de staking pour les entrées GFC (0-1, par défaut: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>Active ou désactive la fonctionnalité de staking pour les entrées zPIV (0-1, par défaut: %u)</translation>
+        <source>Enable or disable staking functionality for zGFC inputs (0-1, default: %u)</source>
+        <translation>Active ou désactive la fonctionnalité de staking pour les entrées zGFC (0-1, par défaut: %u)</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
@@ -4461,8 +4461,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Erreur de chargement du fichier wallet.dat: Portefeuille corrompu</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of PIVX Core</source>
-        <translation>Erreur de chargement du fichier wallet.dat: Le portefeuille nécessite une version plus récente du PIVX core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of GFC Core</source>
+        <translation>Erreur de chargement du fichier wallet.dat: Le portefeuille nécessite une version plus récente du GFC core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4880,8 +4880,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Synchronisation des sporks ...</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>Synchronisation du portefeuille zPIV ...</translation>
+        <source>Syncing zGFC wallet...</source>
+        <translation>Synchronisation du portefeuille zGFC ...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -5028,8 +5028,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Nom d'utilisateur pour les connections JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>La valeur est inférieure à la plus petite dénomination disponible (= 1) de zPIV</translation>
+        <source>Value is below the smallest available denomination (= 1) of zGFC</source>
+        <translation>La valeur est inférieure à la plus petite dénomination disponible (= 1) de zGFC</translation>
     </message>
     <message>
         <source>Value more than Obfuscation pool maximum allows.</source>
@@ -5044,8 +5044,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Vérification du portefeuille...</translation>
     </message>
     <message>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
-        <translation>La version 1 de zPIV requiert un niveau de sécurité de 100 pour les dépenser.
+        <source>Version 1 zGFC require a security level of 100 to successfully spend.</source>
+        <translation>La version 1 de zGFC requiert un niveau de sécurité de 100 pour les dépenser.
 </translation>
     </message>
     <message>
@@ -5053,8 +5053,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>Le portefeuille est vérouillé.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart PIVX Core to complete</source>
-        <translation>Le portefeuille doit être réécrit: redémarrez PIVX Core pour terminer</translation>
+        <source>Wallet needed to be rewritten: restart GFC Core to complete</source>
+        <translation>Le portefeuille doit être réécrit: redémarrez GFC Core pour terminer</translation>
     </message>
     <message>
         <source>Wallet options:</source>

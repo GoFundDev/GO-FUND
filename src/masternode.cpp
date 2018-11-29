@@ -205,6 +205,7 @@ void CMasternode::Check(bool forceCheck)
     }
 
     if (!IsPingedWithin(MASTERNODE_EXPIRATION_SECONDS)) {
+        LogPrintf("DbgSigTime: %d\n", lastPing.sigTime);
         activeState = MASTERNODE_EXPIRED;
         return;
     }

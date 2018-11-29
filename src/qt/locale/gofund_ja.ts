@@ -269,9 +269,9 @@
     </message>
     </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZGFCControlDialog</name>
     </context>
 <context>
-    <name>pivx-core</name>
+    <name>gofund-core</name>
     </context>
 </TS>
