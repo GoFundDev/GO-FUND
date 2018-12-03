@@ -8,7 +8,7 @@ packages:
 - "libssl-dev"
 - "autoconf"
 remotes:
-- "url": "https://github.com/GoFundDev/GoFund-detached-sigs.git"
+- "url": "https://githubGoFundDev/GO-FUND-detached-sigs.git"
   "dir": "signature"
 files:
 - "osslsigncode-1.7.1.tar.gz"

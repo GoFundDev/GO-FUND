@@ -4,7 +4,7 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#define BOOST_TEST_MODULE GoFund Test Suite
+#define BOOST_TEST_MODULE GO-FUND Test Suite
 
 #include "main.h"
 #include "random.h"

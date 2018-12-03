@@ -19,14 +19,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "GoFund"
-            VALUE "FileDescription",    "GoFund Core (OSS GUI client for GoFund)"
+            VALUE "CompanyName",        "GO-FUND"
+            VALUE "FileDescription",    "GO-FUND Core (OSS GUI client for GO-FUND)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "gofund-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
             VALUE "OriginalFilename",   "gofund-qt.exe"
-            VALUE "ProductName",        "GoFund Core"
+            VALUE "ProductName",        "GO-FUND Core"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

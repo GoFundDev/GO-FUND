@@ -1,5 +1,5 @@
 [Unit]
-Description=GoFund's distributed currency daemon
+Description=GO-FUND's distributed currency daemon
 After=network.target
 
 [Service]

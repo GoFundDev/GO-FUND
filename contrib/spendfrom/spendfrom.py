@@ -35,9 +35,9 @@ def check_json_precision():
 def determine_db_dir():
     """Return the default location of the gofund data directory"""
     if platform.system() == "Darwin":
-        return os.path.expanduser("~/Library/Application Support/GoFund/")
+        return os.path.expanduser("~/Library/Application Support/GO-FUND/")
     elif platform.system() == "Windows":
-        return os.path.join(os.environ['APPDATA'], "GoFund")
+        return os.path.join(os.environ['APPDATA'], "GO-FUND")
     return os.path.expanduser("~/.gofund")
 
 def read_bitcoin_config(dbdir):

@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018 The GoFund developers
+// Copyright (c) 2018 The GO-FUND developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -595,12 +595,12 @@ bool DHMSTableWidgetItem::operator<(QTableWidgetItem const& item) const
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "GoFund.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "GO-FUND.lnk";
 }
 
 bool GetStartOnSystemStartup()
 {
-    // check for GoFund.lnk
+    // check for GO-FUND.lnk
     return boost::filesystem::exists(StartupShortcutPath());
 }
 
@@ -713,7 +713,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         // Write a gofund.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=GoFund\n";
+        optionFile << "Name=GO-FUND\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";

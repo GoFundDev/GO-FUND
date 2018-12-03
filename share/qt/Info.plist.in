@@ -29,10 +29,10 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>GoFund-Qt</string>
+  <string>GO-FUND-Qt</string>
   
   <key>CFBundleName</key>
-  <string>GoFund-Qt</string>
+  <string>GO-FUND-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>

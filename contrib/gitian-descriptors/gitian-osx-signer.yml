@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/GoFundDev/GoFund-detached-sigs.git"
+- "url": "https://githubGoFundDev/GO-FUND-detached-sigs.git"
   "dir": "signature"
 files:
 - "gofund-osx-unsigned.tar.gz"
@@ -33,5 +33,5 @@ script: |
   tar -xf ${UNSIGNED}
   OSX_VOLNAME="$(cat osx_volname)"
   ./detached-sig-apply.sh ${UNSIGNED} signature/osx
-  ${WRAP_DIR}/genisoimage -no-cache-inodes -D -l -probe -V "GoFund-Qt" -no-pad -r -dir-mode 0755 -apple -o uncompressed.dmg signed-app
+  ${WRAP_DIR}/genisoimage -no-cache-inodes -D -l -probe -V "GO-FUND-Qt" -no-pad -r -dir-mode 0755 -apple -o uncompressed.dmg signed-app
   ${WRAP_DIR}/dmg dmg uncompressed.dmg ${OUTDIR}/${SIGNED}

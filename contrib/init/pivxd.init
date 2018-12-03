@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-#  gofundd The GoFund core server.
+#  gofundd The GO-FUND core server.
 #
 #
 # chkconfig: 345 80 20

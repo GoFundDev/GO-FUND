@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "GoFund"
-            VALUE "FileDescription",    "gofundd (OSS daemon/client for GoFund)"
+            VALUE "CompanyName",        "GO-FUND"
+            VALUE "FileDescription",    "gofundd (OSS daemon/client for GO-FUND)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "gofundd"
             VALUE "LegalCopyright",     COPYRIGHT_STR

@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2017 The Bitcoin Core developers
 // Copyright (c) 2017-2018 The PIVX developers
-// Copyright (c) 2018 The GoFund developers
+// Copyright (c) 2018 The GO-FUND developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -24,7 +24,7 @@
 #define DO_STRINGIZE(X) #X
 
 //! Copyright string used in Windows .rc files
-#define COPYRIGHT_STR "2009-" STRINGIZE(COPYRIGHT_YEAR) " The Bitcoin Core Developers, 2014-" STRINGIZE(COPYRIGHT_YEAR) " The Dash Core Developers, 2015-" STRINGIZE(COPYRIGHT_YEAR) " The PIVX Core Developers, " STRINGIZE(COPYRIGHT_YEAR) " The GoFund Core Developers"
+#define COPYRIGHT_STR "2009-" STRINGIZE(COPYRIGHT_YEAR) " The Bitcoin Core Developers, 2014-" STRINGIZE(COPYRIGHT_YEAR) " The Dash Core Developers, 2015-" STRINGIZE(COPYRIGHT_YEAR) " The PIVX Core Developers, " STRINGIZE(COPYRIGHT_YEAR) " The GO-FUND Core Developers"
 
 /**
  * gofundd-res.rc includes this file, but it cannot cope with real c++ code.

@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018 The GoFund developers
+// Copyright (c) 2018 The GO-FUND developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -114,15 +114,15 @@ public:
         pchMessageStart[3] = 0x64;
         vAlertPubKey = ParseHex("04651fa1ed0eb025771e6f71c9a748ad4a99dcd083ed7d2c15212fd3e565e88a21b093dbbe1675fcdea2065519326f2357d6a67727969d33096a34af08c4c86f82");
         nDefaultPort = 40881;
-        bnProofOfWorkLimit = ~uint256(0) >> 20; // GoFund starting difficulty is 1 / 2^12
+        bnProofOfWorkLimit = ~uint256(0) >> 20; // GO-FUND starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 250000;
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 40 * 60; // GoFund: 40 minutes
-        nTargetSpacing = 2 * 60;  // GoFund: 2 minutes
+        nTargetTimespan = 40 * 60; // GO-FUND: 40 minutes
+        nTargetSpacing = 2 * 60;  // GO-FUND: 2 minutes
         nMaturity = 10;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 21000000 * COIN;
@@ -240,8 +240,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // GoFund: 1 day
-        nTargetSpacing = 1 * 60;  // GoFund: 1 minute
+        nTargetTimespan = 1 * 60; // GO-FUND: 1 day
+        nTargetSpacing = 1 * 60;  // GO-FUND: 1 minute
         nLastPOWBlock = 200;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
@@ -324,8 +324,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // GoFund: 1 day
-        nTargetSpacing = 1 * 60;        // GoFund: 1 minutes
+        nTargetTimespan = 24 * 60 * 60; // GO-FUND: 1 day
+        nTargetSpacing = 1 * 60;        // GO-FUND: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1454124731;
         genesis.nBits = 0x207fffff;

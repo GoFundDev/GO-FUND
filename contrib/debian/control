@@ -23,14 +23,14 @@ Build-Depends: debhelper,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
 Homepage: http://www.gofund.org
-Vcs-Git: git://github.com/GoFund-Project/GoFund.git
-Vcs-Browser: http://github.com/GoFund-Project/GoFund
+Vcs-Git: git://githubGoFund-Project/GO-FUND.git
+Vcs-Browser: http://githubGoFund-Project/GO-FUND
 
 Package: gofundd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- GoFund is a free open source peer-to-peer electronic cash system that
+ GO-FUND is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
@@ -46,7 +46,7 @@ Package: gofund-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- GoFund is a free open source peer-to-peer electronic cash system that
+ GO-FUND is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
@@ -55,4 +55,4 @@ Description: peer-to-peer network based digital currency - Qt GUI
  Full transaction history is stored locally at each client.  This
  requires 1+ GB of space, slowly growing.
  .
- This package provides GoFund-Qt, a GUI for GoFund based on Qt.
+ This package provides GO-FUND-Qt, a GUI for GO-FUND based on Qt.

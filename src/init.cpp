@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2018 The GoFund developers
+// Copyright (c) 2018 The GO-FUND developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -513,7 +513,7 @@ std::string HelpMessage(HelpMessageMode mode)
     }
     strUsage += HelpMessageOpt("-shrinkdebugfile", _("Shrink debug.log file on client startup (default: 1 when no -debug)"));
     strUsage += HelpMessageOpt("-testnet", _("Use the test network"));
-    strUsage += HelpMessageOpt("-litemode=<n>", strprintf(_("Disable all GoFund specific functionality (Masternodes, SwiftX, Budgeting) (0-1, default: %u)"), 0));
+    strUsage += HelpMessageOpt("-litemode=<n>", strprintf(_("Disable all GO-FUND specific functionality (Masternodes, SwiftX, Budgeting) (0-1, default: %u)"), 0));
 
 #ifdef ENABLE_WALLET
     strUsage += HelpMessageGroup(_("Staking options:"));
@@ -579,7 +579,7 @@ std::string LicenseInfo()
            "\n" +
            FormatParagraph(strprintf(_("Copyright (C) 2015-%i The PIVX Core Developers"), COPYRIGHT_YEAR)) + "\n" +
            "\n" +
-           FormatParagraph(strprintf(_("Copyright (C) %i The GoFund Core Developers"), COPYRIGHT_YEAR)) + "\n" +
+           FormatParagraph(strprintf(_("Copyright (C) %i The GO-FUND Core Developers"), COPYRIGHT_YEAR)) + "\n" +
            "\n" +
            FormatParagraph(_("This is experimental software.")) + "\n" +
            "\n" +
@@ -680,7 +680,7 @@ void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 }
 
 /** Sanity checks
- *  Ensure that GoFund is running in a usable environment with all
+ *  Ensure that GO-FUND is running in a usable environment with all
  *  necessary library support.
  */
 bool InitSanityCheck(void)
@@ -985,7 +985,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
 
     // Sanity check
     if (!InitSanityCheck())
-        return InitError(_("Initialization sanity check failed. GoFund Core is shutting down."));
+        return InitError(_("Initialization sanity check failed. GO-FUND Core is shutting down."));
 
     std::string strDataDir = GetDataDir().string();
 #ifdef ENABLE_WALLET
@@ -993,7 +993,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
     if (strWalletFile != boost::filesystem::basename(strWalletFile) + boost::filesystem::extension(strWalletFile))
         return InitError(strprintf(_("Wallet %s resides outside data directory %s"), strWalletFile, strDataDir));
 #endif
-    // Make sure only a single GoFund process is using the data directory.
+    // Make sure only a single GO-FUND process is using the data directory.
     boost::filesystem::path pathLockFile = GetDataDir() / ".lock";
     FILE* file = fopen(pathLockFile.string().c_str(), "a"); // empty lock file; created if it doesn't exist.
     if (file) fclose(file);
@@ -1001,7 +1001,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
 
     // Wait maximum 10 seconds if an old wallet is still running. Avoids lockup during restart
     if (!lock.timed_lock(boost::get_system_time() + boost::posix_time::seconds(10)))
-        return InitError(strprintf(_("Cannot obtain a lock on data directory %s. GoFund Core is probably already running."), strDataDir));
+        return InitError(strprintf(_("Cannot obtain a lock on data directory %s. GO-FUND Core is probably already running."), strDataDir));
 
 #ifndef WIN32
     CreatePidFile(GetPidFile(), getpid());
@@ -1009,7 +1009,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
     if (GetBoolArg("-shrinkdebugfile", !fDebug))
         ShrinkDebugFile();
     LogPrintf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    LogPrintf("GoFund version %s (%s)\n", FormatFullVersion(), CLIENT_DATE);
+    LogPrintf("GO-FUND version %s (%s)\n", FormatFullVersion(), CLIENT_DATE);
     LogPrintf("Using OpenSSL version %s\n", SSLeay_version(SSLEAY_VERSION));
 #ifdef ENABLE_WALLET
     LogPrintf("Using BerkeleyDB version %s\n", DbEnv::version(0, 0, 0));
@@ -1327,7 +1327,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
 
     // ********************************************************* Step 7: load block chain
 
-    //GoFund: Load Accumulator Checkpoints according to network (main/test/regtest)
+    //GO-FUND: Load Accumulator Checkpoints according to network (main/test/regtest)
     assert(AccumulatorCheckpoints::LoadCheckpoints(Params().NetworkIDString()));
 
     fReindex = GetBoolArg("-reindex", false);
@@ -1389,7 +1389,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
                 delete zerocoinDB;
                 delete pSporkDB;
 
-                //GoFund specific: zerocoin and spork DB's
+                //GO-FUND specific: zerocoin and spork DB's
                 zerocoinDB = new CZerocoinDB(0, false, fReindex);
                 pSporkDB = new CSporkDB(0, false, false);
 
@@ -1401,7 +1401,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
                 if (fReindex)
                     pblocktree->WriteReindexing(true);
 
-                // GoFund: load previous sessions sporks if we have them.
+                // GO-FUND: load previous sessions sporks if we have them.
                 uiInterface.InitMessage(_("Loading sporks..."));
                 LoadSporksFromDB();
 
@@ -1465,7 +1465,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
                                 listAccCheckpointsNoDB.emplace_back(pindex->nAccumulatorCheckpoint);
                             pindex = chainActive.Next(pindex);
                         }
-                        // GoFund: recalculate Accumulator Checkpoints that failed to database properly
+                        // GO-FUND: recalculate Accumulator Checkpoints that failed to database properly
                         if (!listAccCheckpointsNoDB.empty()) {
                             uiInterface.InitMessage(_("Calculating missing accumulators..."));
                             LogPrintf("%s : finding missing checkpoints\n", __func__);
@@ -1573,9 +1573,9 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
                              " or address book entries might be missing or incorrect."));
                 InitWarning(msg);
             } else if (nLoadWalletRet == DB_TOO_NEW)
-                strErrors << _("Error loading wallet.dat: Wallet requires newer version of GoFund Core") << "\n";
+                strErrors << _("Error loading wallet.dat: Wallet requires newer version of GO-FUND Core") << "\n";
             else if (nLoadWalletRet == DB_NEED_REWRITE) {
-                strErrors << _("Wallet needed to be rewritten: restart GoFund Core to complete") << "\n";
+                strErrors << _("Wallet needed to be rewritten: restart GO-FUND Core to complete") << "\n";
                 LogPrintf("%s", strErrors.str());
                 return InitError(strErrors.str());
             } else

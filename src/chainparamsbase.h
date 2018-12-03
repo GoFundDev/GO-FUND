@@ -1,6 +1,6 @@
 // Copyright (c) 2014 The Bitcoin developers
 // Copyright (c) 2017 The PIVX developers
-// Copyright (c) 2018 The GoFund developers
+// Copyright (c) 2018 The GO-FUND developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -12,7 +12,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between gofund-cli and gofundd)
- * of a given instance of the GoFund system.
+ * of a given instance of the GO-FUND system.
  */
 class CBaseChainParams
 {

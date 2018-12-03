@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The GoFund developers
+// Copyright (c) 2018 The GO-FUND developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -60,13 +60,13 @@ bool AppInit(int argc, char* argv[])
 
     // Process help and version before taking care about datadir
     if (mapArgs.count("-?") || mapArgs.count("-help") || mapArgs.count("-version")) {
-        std::string strUsage = _("GoFund Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n";
+        std::string strUsage = _("GO-FUND Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n";
 
         if (mapArgs.count("-version")) {
             strUsage += LicenseInfo();
         } else {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  gofundd [options]                     " + _("Start GoFund Core Daemon") + "\n";
+                        "  gofundd [options]                     " + _("Start GO-FUND Core Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -112,7 +112,7 @@ bool AppInit(int argc, char* argv[])
 #ifndef WIN32
         fDaemon = GetBoolArg("-daemon", false);
         if (fDaemon) {
-            fprintf(stdout, "GoFund server starting\n");
+            fprintf(stdout, "GO-FUND server starting\n");
 
             // Daemonize
             pid_t pid = fork();
