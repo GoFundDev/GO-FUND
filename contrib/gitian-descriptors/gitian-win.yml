@@ -22,7 +22,7 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://githubGoFundDev/GO-FUND.git"
+- "url": "https://github.com/GoFundDev/GO-FUND.git"
   "dir": "gofund"
 files: []
 script: |

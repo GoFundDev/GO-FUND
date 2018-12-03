@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://githubGoFundDev/GO-FUND-detached-sigs.git"
+- "url": "https://github.com/GoFundDev/GO-FUND-detached-sigs.git"
   "dir": "signature"
 files:
 - "gofund-osx-unsigned.tar.gz"
