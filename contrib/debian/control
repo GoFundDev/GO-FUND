@@ -23,8 +23,8 @@ Build-Depends: debhelper,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
 Homepage: http://www.gofund.org
-Vcs-Git: git://githubGoFund-Project/GO-FUND.git
-Vcs-Browser: http://githubGoFund-Project/GO-FUND
+Vcs-Git: git://github.com/GoFundDev/GO-FUND.git
+Vcs-Browser: http://github.com/GoFundDev/GO-FUND
 
 Package: gofundd
 Architecture: any
