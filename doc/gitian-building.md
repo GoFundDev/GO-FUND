@@ -281,8 +281,8 @@ Clone the git repositories for pivx and gitian and then checkout the pivx versio
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
-git clone https://github.com/pivx-crypto/pivx.git
-cd pivx
+git clone https://github.com/GoFundDev/GO-FUND.git
+cd GO-FUND
 git checkout v${VERSION}
 cd ..
 ```
@@ -303,7 +303,8 @@ Execute the following as user `debian`:
 
 ```bash
 cd gitian-builder
-bin/make-base-vm --lxc --arch amd64 --suite precise
+bin/make-base-vm --lxc --arch amd64 --suite trusty
+make -C ../GO-FUND/depends download SOURCES_PATH=`pwd`/cache/common
 ```
 
 There will be a lot of warnings printed during build of the images. These can be ignored.
@@ -352,7 +353,7 @@ Output from `gbuild` will look something like
     Resolving deltas: 100% (25724/25724), done.
     From https://github.com/pivx-crypto/pivx
     ... (new tags, new branch etc)
-    --- Building for precise x86_64 ---
+    --- Building for trusty x86_64 ---
     Stopping target if it is up
     Making a new image copy
     stdin: is not a tty
